@@ -21,6 +21,7 @@ This script automates posting announcements on multiple Moodle forums using Sele
 
 1. **Clone the repository** or download the script files.
 2. **Install the required Python packages** using pip:
+
    ```bash
    pip install selenium
    ```
@@ -35,8 +36,9 @@ This script automates posting announcements on multiple Moodle forums using Sele
 ## Usage
 
 1. **Run the script**:
+
    ```bash
-   python script_name.py
+   python main.py
    ```
 
 2. **Manual Login**: The script will open the Moodle login page. You need to log in manually using your Microsoft 365 credentials.
@@ -45,9 +47,11 @@ This script automates posting announcements on multiple Moodle forums using Sele
 ## Configuration
 
 ### Forum URLs
+
 The forum URLs are read from the `input/links.txt` file. Each line should contain a separate forum URL.
 
 ### Announcement Files
+
 The script reads the announcement subject from `input/subject.txt` and the message from `input/message.txt`. Ensure these files exist in the `input` folder.
 
 ### Logging
