@@ -1,0 +1,21 @@
+2024-09-28 18:39:53,507 - INFO - User logged in manually.
+2024-09-28 18:39:59,357 - INFO - Clicked 'Add discussion topic' on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-09-28 18:40:02,437 - INFO - Entered subject on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-09-28 18:40:02,642 - INFO - Entered message on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-09-28 18:40:06,026 - INFO - Submitted the form on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-09-28 18:40:11,027 - INFO - Announcement posted successfully on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-09-28 18:40:13,172 - INFO - Browser closed. Script completed.
+2024-09-28 18:45:53,091 - INFO - User logged in manually.
+2024-09-28 18:45:59,763 - INFO - Clicked 'Add discussion topic' on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-09-28 18:46:02,834 - INFO - Entered subject on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-09-28 18:46:03,011 - INFO - Entered message on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-09-28 18:46:05,984 - INFO - Submitted the form on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-09-28 18:46:10,985 - INFO - Announcement posted successfully on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-09-28 18:46:13,131 - INFO - Browser closed. Script completed.
+2024-09-28 18:46:36,515 - INFO - User logged in manually.
+2024-09-28 18:46:42,430 - INFO - Clicked 'Add discussion topic' on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-09-28 18:46:45,491 - INFO - Entered subject on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-09-28 18:46:45,599 - INFO - Entered message on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-09-28 18:46:49,306 - INFO - Submitted the form on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-09-28 18:46:54,307 - INFO - Announcement posted successfully on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-09-28 18:46:56,433 - INFO - Browser closed. Script completed.
