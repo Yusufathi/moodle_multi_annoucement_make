@@ -62,19 +62,19 @@ def get_content(content_dir):
 
 
 # Read course links from topic/links.txt
-course_links_file = "topic/links.txt"
+course_links_file = "section/links.txt"
 COURSE_LINKS = read_lines(course_links_file)
 
 # Read topic name from topic/name.txt
-topic_name_file = "topic/name.txt"
+topic_name_file = "section/name.txt"
 TOPIC_NAME = read_file(topic_name_file)
 
 # Read folder name from topic/folder_name.txt
-folder_name_file = "topic/folder_name.txt"
+folder_name_file = "section/folder_name.txt"
 FOLDER_NAME = read_file(folder_name_file)
 
 # Get content files from topic/content/ folder
-content_dir = "topic/content"
+content_dir = "section/content"
 content_files = get_content(content_dir)
 
 # Check if course links, topic name, and folder name were read correctly
