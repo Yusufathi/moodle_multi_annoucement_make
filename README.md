@@ -22,7 +22,7 @@ This project automates posting announcements to multiple Moodle forums using Sel
 1. **Clone this repository** to your local machine:
 
    ```bash
-   git clone <repository_url>
+   git clone <https://github.com/Yusufathi/moodle_multi_annoucement_make.git>
    ```
 
 2. **Install the required Python packages**:
