@@ -1,0 +1,242 @@
+2024-10-05 13:52:23,664 - ERROR - File 'topic/name.txt' not found.
+2024-10-05 13:52:23,664 - INFO - Content files found: ['HW Presentation Topics.pdf']
+2024-10-05 13:52:23,664 - ERROR - Topic name is missing. Exiting script.
+2024-10-05 13:52:50,468 - INFO - Content files found: ['HW Presentation Topics.pdf']
+2024-10-05 14:02:27,058 - INFO - Content files found: ['HW Presentation Topics.pdf']
+2024-10-05 14:03:01,716 - INFO - User logged in manually.
+2024-10-05 14:03:13,136 - ERROR - Failed to enable edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="670119bb28e8a670119bb23c494-editingswitch"]"}
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF779E0B125+29573]
+	(No symbol) [0x00007FF779D7FF50]
+	(No symbol) [0x00007FF779C3B6EA]
+	(No symbol) [0x00007FF779C8F815]
+	(No symbol) [0x00007FF779C8FA6C]
+	(No symbol) [0x00007FF779CDB917]
+	(No symbol) [0x00007FF779CB733F]
+	(No symbol) [0x00007FF779CD86BC]
+	(No symbol) [0x00007FF779CB70A3]
+	(No symbol) [0x00007FF779C812DF]
+	(No symbol) [0x00007FF779C82441]
+	GetHandleVerifier [0x00007FF77A13C76D+3377613]
+	GetHandleVerifier [0x00007FF77A187B67+3685831]
+	GetHandleVerifier [0x00007FF77A17CF8B+3641835]
+	GetHandleVerifier [0x00007FF779ECB2A6+816390]
+	(No symbol) [0x00007FF779D8B25F]
+	(No symbol) [0x00007FF779D87084]
+	(No symbol) [0x00007FF779D87220]
+	(No symbol) [0x00007FF779D7607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 14:03:15,282 - INFO - Browser closed. Script completed.
+2024-10-05 14:04:08,554 - INFO - Content files found: ['HW Presentation Topics.pdf']
+2024-10-05 14:04:29,730 - INFO - User logged in manually.
+2024-10-05 14:04:34,037 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 14:04:34,049 - ERROR - Failed to find 'Add topic' button on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(), 'Add topic')]"}
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF779E0B125+29573]
+	(No symbol) [0x00007FF779D7FF50]
+	(No symbol) [0x00007FF779C3B6EA]
+	(No symbol) [0x00007FF779C8F815]
+	(No symbol) [0x00007FF779C8FA6C]
+	(No symbol) [0x00007FF779CDB917]
+	(No symbol) [0x00007FF779CB733F]
+	(No symbol) [0x00007FF779CD86BC]
+	(No symbol) [0x00007FF779CB70A3]
+	(No symbol) [0x00007FF779C812DF]
+	(No symbol) [0x00007FF779C82441]
+	GetHandleVerifier [0x00007FF77A13C76D+3377613]
+	GetHandleVerifier [0x00007FF77A187B67+3685831]
+	GetHandleVerifier [0x00007FF77A17CF8B+3641835]
+	GetHandleVerifier [0x00007FF779ECB2A6+816390]
+	(No symbol) [0x00007FF779D8B25F]
+	(No symbol) [0x00007FF779D87084]
+	(No symbol) [0x00007FF779D87220]
+	(No symbol) [0x00007FF779D7607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 14:04:36,181 - INFO - Browser closed. Script completed.
+2024-10-05 14:10:38,428 - INFO - Content files found: ['HW Presentation Topics.pdf']
+2024-10-05 14:10:59,596 - INFO - User logged in manually.
+2024-10-05 14:11:05,943 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 14:11:07,070 - INFO - Clicked 'Add section' button on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 14:11:10,127 - INFO - Clicked 'Edit section name' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 14:11:20,284 - ERROR - Failed to rename section on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF779E0B125+29573]
+	(No symbol) [0x00007FF779D7FF50]
+	(No symbol) [0x00007FF779C3B6EA]
+	(No symbol) [0x00007FF779C8F815]
+	(No symbol) [0x00007FF779C8FA6C]
+	(No symbol) [0x00007FF779CDB917]
+	(No symbol) [0x00007FF779CB733F]
+	(No symbol) [0x00007FF779CD86BC]
+	(No symbol) [0x00007FF779CB70A3]
+	(No symbol) [0x00007FF779C812DF]
+	(No symbol) [0x00007FF779C82441]
+	GetHandleVerifier [0x00007FF77A13C76D+3377613]
+	GetHandleVerifier [0x00007FF77A187B67+3685831]
+	GetHandleVerifier [0x00007FF77A17CF8B+3641835]
+	GetHandleVerifier [0x00007FF779ECB2A6+816390]
+	(No symbol) [0x00007FF779D8B25F]
+	(No symbol) [0x00007FF779D87084]
+	(No symbol) [0x00007FF779D87220]
+	(No symbol) [0x00007FF779D7607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 14:11:22,415 - INFO - Browser closed. Script completed.
+2024-10-05 14:16:47,504 - INFO - Content files found: ['HW Presentation Topics.pdf']
+2024-10-05 14:17:18,692 - INFO - User logged in manually.
+2024-10-05 14:17:26,216 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 14:17:27,240 - INFO - Clicked 'Add section' button on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 14:17:30,302 - INFO - Clicked 'Edit section name' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 14:17:40,465 - ERROR - Failed to rename section on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF779E0B125+29573]
+	(No symbol) [0x00007FF779D7FF50]
+	(No symbol) [0x00007FF779C3B6EA]
+	(No symbol) [0x00007FF779C8F815]
+	(No symbol) [0x00007FF779C8FA6C]
+	(No symbol) [0x00007FF779CDB917]
+	(No symbol) [0x00007FF779CB733F]
+	(No symbol) [0x00007FF779CD86BC]
+	(No symbol) [0x00007FF779CB70A3]
+	(No symbol) [0x00007FF779C812DF]
+	(No symbol) [0x00007FF779C82441]
+	GetHandleVerifier [0x00007FF77A13C76D+3377613]
+	GetHandleVerifier [0x00007FF77A187B67+3685831]
+	GetHandleVerifier [0x00007FF77A17CF8B+3641835]
+	GetHandleVerifier [0x00007FF779ECB2A6+816390]
+	(No symbol) [0x00007FF779D8B25F]
+	(No symbol) [0x00007FF779D87084]
+	(No symbol) [0x00007FF779D87220]
+	(No symbol) [0x00007FF779D7607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 14:17:42,613 - INFO - Browser closed. Script completed.
+2024-10-05 14:19:22,326 - INFO - Content files found: ['HW Presentation Topics.pdf']
+2024-10-05 14:19:41,356 - INFO - User logged in manually.
+2024-10-05 14:19:46,720 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 14:19:48,232 - INFO - Clicked 'Add section' button on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 14:19:51,280 - INFO - Clicked 'Edit section name' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 14:20:11,602 - ERROR - Failed to rename the last section on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF779E0B125+29573]
+	(No symbol) [0x00007FF779D7FF50]
+	(No symbol) [0x00007FF779C3B6EA]
+	(No symbol) [0x00007FF779C8F815]
+	(No symbol) [0x00007FF779C8FA6C]
+	(No symbol) [0x00007FF779CDB917]
+	(No symbol) [0x00007FF779CB733F]
+	(No symbol) [0x00007FF779CD86BC]
+	(No symbol) [0x00007FF779CB70A3]
+	(No symbol) [0x00007FF779C812DF]
+	(No symbol) [0x00007FF779C82441]
+	GetHandleVerifier [0x00007FF77A13C76D+3377613]
+	GetHandleVerifier [0x00007FF77A187B67+3685831]
+	GetHandleVerifier [0x00007FF77A17CF8B+3641835]
+	GetHandleVerifier [0x00007FF779ECB2A6+816390]
+	(No symbol) [0x00007FF779D8B25F]
+	(No symbol) [0x00007FF779D87084]
+	(No symbol) [0x00007FF779D87220]
+	(No symbol) [0x00007FF779D7607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 14:20:13,751 - INFO - Browser closed. Script completed.
+2024-10-05 14:24:16,888 - INFO - Content files found: ['HW Presentation Topics.pdf']
+2024-10-05 14:24:51,075 - INFO - User logged in manually.
+2024-10-05 14:24:54,854 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 14:24:57,354 - INFO - Clicked 'Add section' button on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 14:25:00,402 - INFO - Clicked 'Edit section name' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 14:25:02,865 - INFO - Renamed last section to 'Week1' using pyautogui on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 14:25:13,149 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: 
+
+2024-10-05 14:25:20,286 - INFO - Browser closed. Script completed.
+2024-10-05 14:25:38,796 - INFO - Content files found: ['HW Presentation Topics.pdf']
+2024-10-05 14:25:58,708 - INFO - User logged in manually.
+2024-10-05 14:26:03,794 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 14:26:05,984 - INFO - Clicked 'Add section' button on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 14:26:09,033 - INFO - Clicked 'Edit section name' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 14:26:11,493 - INFO - Renamed last section to 'Week1' using pyautogui on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 14:26:21,798 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: 
+
+2024-10-05 14:26:28,957 - INFO - Browser closed. Script completed.
+2024-10-05 15:45:09,277 - INFO - Content files found: ['HW Presentation Topics.pdf']
+2024-10-05 15:45:39,644 - INFO - User logged in manually.
+2024-10-05 15:45:43,588 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 15:45:46,075 - INFO - Clicked 'Add section' button on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 15:45:49,118 - INFO - Clicked 'Edit section name' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 15:45:51,582 - INFO - Renamed last section to 'Week1' using pyautogui on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 15:46:01,874 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: 
+
+2024-10-05 15:46:09,030 - INFO - Browser closed. Script completed.
+2024-10-05 15:47:42,104 - INFO - Content files found: ['HW Presentation Topics.pdf']
+2024-10-05 15:47:58,940 - INFO - User logged in manually.
+2024-10-05 15:48:13,439 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 15:48:14,398 - INFO - Clicked 'Add section' button on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 15:48:17,443 - INFO - Clicked 'Edit section name' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 15:48:19,907 - INFO - Renamed last section to 'Week1' using pyautogui on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 15:48:30,213 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: 
+
+2024-10-05 15:48:37,395 - INFO - Browser closed. Script completed.
+2024-10-05 16:03:18,067 - INFO - Content files found: ['HW Presentation Topics.pdf']
+2024-10-05 16:03:41,980 - INFO - User logged in manually.
+2024-10-05 16:03:45,784 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:03:46,971 - INFO - Clicked 'Add section' button on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:03:50,015 - INFO - Clicked 'Edit section name' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:03:52,477 - INFO - Renamed last section to 'Week1' using pyautogui on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:04:02,771 - ERROR - Failed to add Folder activity on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: 
+
+2024-10-05 16:04:04,966 - INFO - Browser closed. Script completed.
+2024-10-05 16:09:10,725 - INFO - Content files found: ['HW Presentation Topics.pdf']
+2024-10-05 16:09:34,388 - INFO - User logged in manually.
+2024-10-05 16:09:38,161 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:09:40,054 - INFO - Clicked 'Add section' button on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:09:43,100 - INFO - Clicked 'Edit section name' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:09:45,560 - INFO - Renamed last section to 'Week1' using pyautogui on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:09:45,609 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:09:58,792 - ERROR - Failed to add Folder activity on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2A1B125+29573]
+	(No symbol) [0x00007FF7D298FF50]
+	(No symbol) [0x00007FF7D284B6EA]
+	(No symbol) [0x00007FF7D289F815]
+	(No symbol) [0x00007FF7D289FA6C]
+	(No symbol) [0x00007FF7D28EB917]
+	(No symbol) [0x00007FF7D28C733F]
+	(No symbol) [0x00007FF7D28E86BC]
+	(No symbol) [0x00007FF7D28C70A3]
+	(No symbol) [0x00007FF7D28912DF]
+	(No symbol) [0x00007FF7D2892441]
+	GetHandleVerifier [0x00007FF7D2D4C76D+3377613]
+	GetHandleVerifier [0x00007FF7D2D97B67+3685831]
+	GetHandleVerifier [0x00007FF7D2D8CF8B+3641835]
+	GetHandleVerifier [0x00007FF7D2ADB2A6+816390]
+	(No symbol) [0x00007FF7D299B25F]
+	(No symbol) [0x00007FF7D2997084]
+	(No symbol) [0x00007FF7D2997220]
+	(No symbol) [0x00007FF7D298607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 16:10:00,932 - INFO - Browser closed. Script completed.
+2024-10-05 16:11:16,738 - INFO - Content files found: ['HW Presentation Topics.pdf']
+2024-10-05 16:11:51,732 - INFO - User logged in manually.
+2024-10-05 16:11:55,273 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:11:56,548 - INFO - Clicked 'Add section' button on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:11:59,603 - INFO - Clicked 'Edit section name' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:12:02,067 - INFO - Renamed last section to 'Week1' using pyautogui on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:12:02,114 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:12:12,105 - INFO - Clicked 'Add Folder' option on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:12:12,195 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:12:13,343 - INFO - Clicked 'Add...' button to upload files on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:12:13,893 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\topic\content\HW Presentation Topics.pdf
+2024-10-05 16:12:13,954 - INFO - Clicked 'Upload this file' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:12:16,460 - INFO - Saved folder and returned to course on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:12:23,625 - INFO - Browser closed. Script completed.
