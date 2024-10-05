@@ -1,249 +1,210 @@
 import logging
-import pyautogui  # For keystrokes
+import os
+import time
+import pyautogui
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time
-import os
 
 # Set up logging
 logging.basicConfig(filename="moodle_topic_content_uploader_log.txt", level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Path to Chromedriver (local to the project root directory)
+# Path to Chromedriver
 CHROMEDRIVER_PATH = os.path.join(os.getcwd(), 'chromedriver.exe')
-
-# Function to read file content
 
 
 def read_file(file_path):
+    """Read the content of a file."""
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
-            # Read the entire file content and strip trailing spaces
-            content = file.read().strip()
-            return content
+            return file.read().strip()
     except FileNotFoundError:
         logging.error(f"File '{file_path}' not found.")
         return None
 
-# Function to read multiple lines (used for links.txt)
-
 
 def read_lines(file_path):
+    """Read multiple lines from a file."""
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
-            content = file.readlines()  # Read all lines from file
-            return [line.strip() for line in content]  # Return a list of URLs
+            return [line.strip() for line in file.readlines()]
     except FileNotFoundError:
         logging.error(f"File '{file_path}' not found.")
         return []
 
-# Function to check if the content folder is empty or contains files
 
-
-def get_content(content_dir):
+def get_content_files(content_dir):
+    """Get all content files from a directory."""
     try:
-        # Get list of files in the content folder
         files = os.listdir(content_dir)
-        if len(files) == 0:
+        if not files:
             logging.info("No content found. Skipping content upload.")
             return []
-        else:
-            # Convert to absolute paths
-            logging.info(f"Content files found: {files}")
-            # Return absolute paths
-            return [os.path.abspath(os.path.join(content_dir, f)) for f in files]
+        return [os.path.abspath(os.path.join(content_dir, f)) for f in files]
     except FileNotFoundError:
         logging.error(f"Content folder '{content_dir}' not found.")
         return []
 
 
-# Read course links from topic/links.txt
-course_links_file = "section/links.txt"
-COURSE_LINKS = read_lines(course_links_file)
+def login_to_moodle(driver):
+    """Open Moodle and prompt user to log in manually."""
+    driver.get("https://moodle.nu.edu.eg/")
+    input("Please log in to Moodle, then press Enter to continue...")
+    logging.info("User logged in manually.")
+    print("User logged in manually.")
 
-# Read topic name from topic/name.txt
-topic_name_file = "section/name.txt"
-TOPIC_NAME = read_file(topic_name_file)
 
-# Read folder name from topic/folder_name.txt
-folder_name_file = "section/folder_name.txt"
-FOLDER_NAME = read_file(folder_name_file)
-
-# Get content files from topic/content/ folder
-content_dir = "section/content"
-content_files = get_content(content_dir)
-
-# Check if course links, topic name, and folder name were read correctly
-if not COURSE_LINKS:
-    logging.error("No course links found in links.txt. Exiting script.")
-    print("No course links found in links.txt. Exiting script.")
-    exit()
-
-if not TOPIC_NAME:
-    logging.error("Topic name is missing. Exiting script.")
-    print("Topic name is missing. Exiting script.")
-    exit()
-
-if not FOLDER_NAME:
-    logging.error("Folder name is missing. Exiting script.")
-    print("Folder name is missing. Exiting script.")
-    exit()
-
-# Set up WebDriver to use the local Chromedriver with Service object
-service = Service(executable_path=CHROMEDRIVER_PATH)
-driver = webdriver.Chrome(service=service)
-driver.maximize_window()
-
-# Open Moodle and wait for manual login
-driver.get("https://moodle.nu.edu.eg/")
-# User manually logs in
-input("Please log in to Moodle, then press Enter to continue...")
-logging.info("User logged in manually.")
-print("User logged in manually.")
-
-# Loop through each course URL to enable edit mode, create the topic, and upload content
-for course_url in COURSE_LINKS:
-    print(f"Navigating to course URL: {course_url}")
-    driver.get(course_url)
-    time.sleep(3)
-
-    # Enable edit mode if not already enabled
+def enable_edit_mode(driver, course_url):
+    """Enable edit mode in Moodle if not already enabled."""
     try:
+        start_time = time.time()
+        driver.get(course_url)
+        time.sleep(3)
         edit_mode_checkbox = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located(
                 (By.XPATH, "//input[@type='checkbox' and contains(@id, 'editingswitch')]"))
         )
-
         if not edit_mode_checkbox.is_selected():
-            edit_mode_checkbox.click()  # Enable edit mode by clicking the checkbox
+            edit_mode_checkbox.click()
             logging.info(f"Enabled edit mode on course: {course_url}")
-            print(f"Enabled edit mode on course: {course_url}")
+            print(
+                f"Enabled edit mode on course: {course_url} (Time taken: {time.time() - start_time:.2f} seconds)")
         else:
             logging.info(f"Edit mode already enabled on course: {course_url}")
-            print(f"Edit mode already enabled on course: {course_url}")
+            print(
+                f"Edit mode already enabled on course: {course_url} (Time taken: {time.time() - start_time:.2f} seconds)")
     except Exception as e:
         logging.error(
             f"Failed to enable edit mode on course: {course_url} - Error: {e}")
-        print(
-            f"Failed to enable edit mode on course: {course_url} - Error: {e}")
-        continue
 
-    # Click "Add section" button to create a new section
+
+def add_section(driver, course_url):
+    """Add a new section and rename it using pyautogui."""
     try:
+        start_time = time.time()
         add_section_button = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.CSS_SELECTOR, "a.btn.add-section"))
         )
         add_section_button.click()
         logging.info(f"Clicked 'Add section' button on course: {course_url}")
-        print(f"Clicked 'Add section' button on course: {course_url}")
-    except Exception as e:
-        logging.error(
-            f"Failed to click 'Add section' on course: {course_url} - Error: {e}")
-        print(
-            f"Failed to click 'Add section' on course: {course_url} - Error: {e}")
-        continue
+        time.sleep(3)
 
-    time.sleep(3)  # Wait for the new section to be added
-
-    # Rename the last section using pyautogui for keystrokes
-    try:
-        # Find all "Edit section name" links and select the last one
+        # Rename the last section
         edit_section_links = WebDriverWait(driver, 10).until(
             EC.presence_of_all_elements_located(
                 (By.XPATH, "//a[@title='Edit section name']"))
         )
-        # Select the last section
         last_edit_section_link = edit_section_links[-1]
         last_edit_section_link.click()
         logging.info(
             f"Clicked 'Edit section name' on the last section of course: {course_url}")
-        print(
-            f"Clicked 'Edit section name' on the last section of course: {course_url}")
 
-        # Use pyautogui to send the topic name and press Enter
-        time.sleep(2)  # Wait briefly to ensure the input field is focused
-        # Type the topic name slowly
+        time.sleep(2)
         pyautogui.write(TOPIC_NAME, interval=0.05)
-        pyautogui.press('enter')  # Press Enter to submit the name change
-
+        pyautogui.press('enter')
         logging.info(
-            f"Renamed last section to '{TOPIC_NAME}' using pyautogui on course: {course_url}")
+            f"Renamed last section to '{TOPIC_NAME}' on course: {course_url}")
         print(
-            f"Renamed last section to '{TOPIC_NAME}' using pyautogui on course: {course_url}")
-
+            f"Renamed section to '{TOPIC_NAME}' (Time taken: {time.time() - start_time:.2f} seconds)")
     except Exception as e:
         logging.error(
-            f"Failed to rename the last section on course: {course_url} - Error: {e}")
-        print(
-            f"Failed to rename the last section on course: {course_url} - Error: {e}")
-        continue
+            f"Failed to create or rename section on course: {course_url} - Error: {e}")
 
-        # Click "Add an activity or resource" button in the last section
+
+def click_add_activity_or_resource(driver, course_url):
+    """Click 'Add an activity or resource' in the last section."""
     try:
+        start_time = time.time()
         add_content_buttons = WebDriverWait(driver, 10).until(
             EC.presence_of_all_elements_located(
                 (By.XPATH, "//button[@data-action='open-chooser']"))
         )
-        last_add_content_button = add_content_buttons[-1]  # Get the last one
+        last_add_content_button = add_content_buttons[-1]
         last_add_content_button.click()
         logging.info(
             f"Clicked 'Add an activity or resource' on the last section of course: {course_url}")
+        time.sleep(2)
         print(
-            f"Clicked 'Add an activity or resource' on the last section of course: {course_url}")
+            f"Clicked 'Add an activity or resource' (Time taken: {time.time() - start_time:.2f} seconds)")
+    except Exception as e:
+        logging.error(
+            f"Failed to click 'Add an activity or resource' on course: {course_url} - Error: {e}")
 
-        # Wait for the modal window to load
-        time.sleep(5)  # Adjust this value if necessary to wait for the modal
 
-        # Click the Folder icon to add a folder
+def add_folder_activity(driver, course_url):
+    """Add a folder activity in the last section."""
+    try:
+        start_time = time.time()
         folder_option = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable(
                 (By.XPATH, "//div[contains(@class, 'modicon_folder')]"))
         )
         folder_option.click()
-        logging.info(f"Clicked 'Add Folder' option on course: {course_url}")
-        print(f"Clicked 'Add Folder' option on course: {course_url}")
-
+        logging.info(f"Clicked 'Add Folder' on course: {course_url}")
+        time.sleep(3)
+        print(
+            f"Clicked 'Add Folder' option (Time taken: {time.time() - start_time:.2f} seconds)")
     except Exception as e:
         logging.error(
-            f"Failed to add Folder activity on course: {course_url} - Error: {e}")
-        print(
-            f"Failed to add Folder activity on course: {course_url} - Error: {e}")
-        continue
+            f"Failed to click 'Add Folder' on course: {course_url} - Error: {e}")
 
-    # Fill in the folder name
+
+def enter_folder_name(driver, course_url, folder_name):
+    """Enter the name of the folder to be created."""
     try:
+        start_time = time.time()
         folder_name_input = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, "id_name"))
         )
-        folder_name_input.send_keys(FOLDER_NAME)
+        folder_name_input.send_keys(folder_name)
         logging.info(
-            f"Entered folder name '{FOLDER_NAME}' on course: {course_url}")
-        print(f"Entered folder name '{FOLDER_NAME}' on course: {course_url}")
-
-        # Click the "Add..." button to open the file upload dialog
-        add_file_button = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable(
-                (By.CSS_SELECTOR, "a.btn.btn-secondary"))
-        )
-        add_file_button.click()
-        logging.info(
-            f"Clicked 'Add...' button to upload files on course: {course_url}")
+            f"Entered folder name '{folder_name}' on course: {course_url}")
         print(
-            f"Clicked 'Add...' button to upload files on course: {course_url}")
+            f"Entered folder name '{folder_name}' (Time taken: {time.time() - start_time:.2f} seconds)")
+    except Exception as e:
+        logging.error(
+            f"Failed to enter folder name on course: {course_url} - Error: {e}")
 
-        # Upload files
-        file_input = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located(
-                (By.CSS_SELECTOR, 'input[type="file"]'))
-        )
-        for content in content_files:
+
+def upload_files(driver, content_files, course_url):
+    """Upload files one by one with proper waiting."""
+    for content in content_files:
+        try:
+            start_time = time.time()
+            logging.info(f"Attempting to upload content: {content}")
+            print(f"Attempting to upload content: {content}")
+
+            # Click "Add..." button
+            add_file_button = WebDriverWait(driver, 10).until(
+                EC.element_to_be_clickable(
+                    (By.CSS_SELECTOR, "a.btn.btn-secondary"))
+            )
+            add_file_button.click()
+            logging.info("Clicked 'Add...' button to open file upload dialog")
+            print(
+                f"Clicked 'Add...' button to open file upload dialog (Time taken: {time.time() - start_time:.2f} seconds)")
+
+            # Wait for the file input to appear
+            file_input = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located(
+                    (By.CSS_SELECTOR, 'input[type="file"]'))
+            )
             file_input.send_keys(content)  # Send the file path
             logging.info(f"Uploaded content: {content}")
-            print(f"Uploaded content: {content}")
+            print(
+                f"Uploaded content: {content} (Time taken: {time.time() - start_time:.2f} seconds)")
+
+            # Wait for the file to finish uploading
+            WebDriverWait(driver, 60).until(
+                EC.invisibility_of_element_located(
+                    (By.CLASS_NAME, "dndupload-uploadinprogress"))
+            )
+            logging.info(f"File upload finished: {content}")
+            print(
+                f"File upload finished: {content} (Time taken: {time.time() - start_time:.2f} seconds)")
 
             # Click "Upload this file" button
             upload_button = WebDriverWait(driver, 10).until(
@@ -251,34 +212,109 @@ for course_url in COURSE_LINKS:
                     (By.CSS_SELECTOR, 'button.fp-upload-btn'))
             )
             upload_button.click()
-            logging.info(f"Clicked 'Upload this file' on course: {course_url}")
-            print(f"Clicked 'Upload this file' on course: {course_url}")
+            logging.info(
+                f"Clicked 'Upload this file' for {content} on course: {course_url}")
+            print(
+                f"Clicked 'Upload this file' for {content} on course: {course_url} (Time taken: {time.time() - start_time:.2f} seconds)")
 
-    except Exception as e:
-        logging.error(
-            f"Failed to upload content on course: {course_url} - Error: {e}")
-        print(f"Failed to upload content on course: {course_url} - Error: {e}")
-        continue
+            # Wait for the upload process to fully complete and ensure the dialog is closed
+            WebDriverWait(driver, 30).until(
+                EC.invisibility_of_element_located(
+                    (By.CLASS_NAME, "yui3-widget-mask"))
+            )
+            logging.info(f"Upload dialog closed for {content}")
+            print(
+                f"Upload dialog closed for {content} (Time taken: {time.time() - start_time:.2f} seconds)")
 
-    # Save the folder and return to the course
+            # Now that the file is uploaded, wait for the "Add..." button to reappear for the next file
+            WebDriverWait(driver, 10).until(
+                EC.element_to_be_clickable(
+                    (By.CSS_SELECTOR, "a.btn.btn-secondary"))
+            )
+            logging.info("Preparing for next file upload (if any)")
+            print("Preparing for next file upload (if any)")
+            time.sleep(2)  # Give UI time to reset
+
+        except Exception as e:
+            logging.error(
+                f"Failed to upload content on course: {course_url} - Error: {e}")
+            print(
+                f"Failed to upload content on course: {course_url} - Error: {e}")
+            continue
+
+
+def save_and_return_to_course(driver, course_url):
+    """Save the folder and return to the course page."""
     try:
+        start_time = time.time()
         save_button = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.ID, "id_submitbutton2"))
         )
         save_button.click()
         logging.info(
             f"Saved folder and returned to course on course: {course_url}")
-        print(f"Saved folder and returned to course on course: {course_url}")
-
+        print(
+            f"Saved folder and returned to course (Time taken: {time.time() - start_time:.2f} seconds)")
     except Exception as e:
         logging.error(
             f"Failed to save folder on course: {course_url} - Error: {e}")
-        print(f"Failed to save folder on course: {course_url} - Error: {e}")
 
-    # Wait for the action to complete
-    time.sleep(5)
 
-# Close the browser once all content is uploaded
-driver.quit()
-logging.info("Browser closed. Script completed.")
-print("Browser closed. Script completed.")
+def process_course(driver, course_url, create_new_section, folder_name, content_files):
+    """Process each course by uploading content."""
+    enable_edit_mode(driver, course_url)
+
+    if create_new_section:
+        add_section(driver, course_url)
+
+    click_add_activity_or_resource(driver, course_url)
+    add_folder_activity(driver, course_url)
+    enter_folder_name(driver, course_url, folder_name)
+    upload_files(driver, content_files, course_url)
+    save_and_return_to_course(driver, course_url)
+
+
+def main():
+    """Main function to execute the script."""
+    CREATE_NEW_SECTION = False  # Set this to True if you want to create a new section
+
+    # File paths
+    course_links_file = "section/links.txt"
+    topic_name_file = "section/name.txt"
+    folder_name_file = "section/folder_name.txt"
+    content_dir = "section/content"
+
+    # Read data from files
+    COURSE_LINKS = read_lines(course_links_file)
+    global TOPIC_NAME
+    TOPIC_NAME = read_file(topic_name_file)
+    FOLDER_NAME = read_file(folder_name_file)
+    content_files = get_content_files(content_dir)
+
+    # Ensure required data is present
+    if not COURSE_LINKS or not TOPIC_NAME or not FOLDER_NAME or not content_files:
+        logging.error("Missing required data. Please check your input files.")
+        print("Missing required data. Please check your input files.")
+        return
+
+    # Set up WebDriver
+    service = Service(executable_path=CHROMEDRIVER_PATH)
+    driver = webdriver.Chrome(service=service)
+    driver.maximize_window()
+
+    # Log in to Moodle
+    login_to_moodle(driver)
+
+    # Process each course link
+    for course_url in COURSE_LINKS:
+        process_course(driver, course_url, CREATE_NEW_SECTION,
+                       FOLDER_NAME, content_files)
+
+    # Close the browser once all content is uploaded
+    driver.quit()
+    logging.info("Browser closed. Script completed.")
+    print("Browser closed. Script completed.")
+
+
+if __name__ == "__main__":
+    main()

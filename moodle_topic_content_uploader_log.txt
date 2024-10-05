@@ -254,3 +254,1018 @@ Stacktrace:
 2024-10-05 16:21:19,381 - INFO - Clicked 'Upload this file' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
 2024-10-05 16:21:21,553 - INFO - Saved folder and returned to course on course: https://moodle.nu.edu.eg/course/view.php?id=11784
 2024-10-05 16:21:28,663 - INFO - Browser closed. Script completed.
+2024-10-05 16:45:03,172 - INFO - Content files found: ['CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf', 'Freshman Guidance Tips \U0001f60a.pdf', 'HW Presentation Topics.pdf']
+2024-10-05 16:45:25,516 - INFO - User logged in manually.
+2024-10-05 16:45:29,327 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=12055
+2024-10-05 16:45:30,276 - INFO - Clicked 'Add section' button on course: https://moodle.nu.edu.eg/course/view.php?id=12055
+2024-10-05 16:45:33,327 - INFO - Clicked 'Edit section name' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=12055
+2024-10-05 16:45:36,712 - INFO - Renamed last section to 'Week#1 Tutorial Content' using pyautogui on course: https://moodle.nu.edu.eg/course/view.php?id=12055
+2024-10-05 16:45:36,764 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=12055
+2024-10-05 16:45:44,179 - INFO - Clicked 'Add Folder' option on course: https://moodle.nu.edu.eg/course/view.php?id=12055
+2024-10-05 16:45:44,271 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=12055
+2024-10-05 16:45:45,411 - INFO - Clicked 'Add...' button to upload files on course: https://moodle.nu.edu.eg/course/view.php?id=12055
+2024-10-05 16:45:45,950 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 16:45:46,017 - INFO - Clicked 'Upload this file' on course: https://moodle.nu.edu.eg/course/view.php?id=12055
+2024-10-05 16:45:46,035 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=12055 - Error: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2A1B125+29573]
+	(No symbol) [0x00007FF7D298FF50]
+	(No symbol) [0x00007FF7D284B6EA]
+	(No symbol) [0x00007FF7D28522BE]
+	(No symbol) [0x00007FF7D2854637]
+	(No symbol) [0x00007FF7D28546F0]
+	(No symbol) [0x00007FF7D28A06A2]
+	(No symbol) [0x00007FF7D28A0772]
+	(No symbol) [0x00007FF7D289652B]
+	(No symbol) [0x00007FF7D28C72FA]
+	(No symbol) [0x00007FF7D2892FF6]
+	(No symbol) [0x00007FF7D28C7510]
+	(No symbol) [0x00007FF7D28E86BC]
+	(No symbol) [0x00007FF7D28C70A3]
+	(No symbol) [0x00007FF7D28912DF]
+	(No symbol) [0x00007FF7D2892441]
+	GetHandleVerifier [0x00007FF7D2D4C76D+3377613]
+	GetHandleVerifier [0x00007FF7D2D97B67+3685831]
+	GetHandleVerifier [0x00007FF7D2D8CF8B+3641835]
+	GetHandleVerifier [0x00007FF7D2ADB2A6+816390]
+	(No symbol) [0x00007FF7D299B25F]
+	(No symbol) [0x00007FF7D2997084]
+	(No symbol) [0x00007FF7D2997220]
+	(No symbol) [0x00007FF7D298607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 16:45:49,541 - INFO - Edit mode already enabled on course: https://moodle.nu.edu.eg/course/view.php?id=12059
+2024-10-05 16:45:49,605 - INFO - Clicked 'Add section' button on course: https://moodle.nu.edu.eg/course/view.php?id=12059
+2024-10-05 16:45:52,640 - INFO - Clicked 'Edit section name' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=12059
+2024-10-05 16:45:56,036 - INFO - Renamed last section to 'Week#1 Tutorial Content' using pyautogui on course: https://moodle.nu.edu.eg/course/view.php?id=12059
+2024-10-05 16:45:56,075 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=12059
+2024-10-05 16:46:02,436 - INFO - Clicked 'Add Folder' option on course: https://moodle.nu.edu.eg/course/view.php?id=12059
+2024-10-05 16:46:02,555 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=12059
+2024-10-05 16:46:02,667 - INFO - Clicked 'Add...' button to upload files on course: https://moodle.nu.edu.eg/course/view.php?id=12059
+2024-10-05 16:46:03,225 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 16:46:03,279 - INFO - Clicked 'Upload this file' on course: https://moodle.nu.edu.eg/course/view.php?id=12059
+2024-10-05 16:46:03,287 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=12059 - Error: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2A1B125+29573]
+	(No symbol) [0x00007FF7D298FF50]
+	(No symbol) [0x00007FF7D284B6EA]
+	(No symbol) [0x00007FF7D28522BE]
+	(No symbol) [0x00007FF7D2854637]
+	(No symbol) [0x00007FF7D28546F0]
+	(No symbol) [0x00007FF7D28A06A2]
+	(No symbol) [0x00007FF7D28A0772]
+	(No symbol) [0x00007FF7D289652B]
+	(No symbol) [0x00007FF7D28C72FA]
+	(No symbol) [0x00007FF7D2892FF6]
+	(No symbol) [0x00007FF7D28C7510]
+	(No symbol) [0x00007FF7D28E86BC]
+	(No symbol) [0x00007FF7D28C70A3]
+	(No symbol) [0x00007FF7D28912DF]
+	(No symbol) [0x00007FF7D2892441]
+	GetHandleVerifier [0x00007FF7D2D4C76D+3377613]
+	GetHandleVerifier [0x00007FF7D2D97B67+3685831]
+	GetHandleVerifier [0x00007FF7D2D8CF8B+3641835]
+	GetHandleVerifier [0x00007FF7D2ADB2A6+816390]
+	(No symbol) [0x00007FF7D299B25F]
+	(No symbol) [0x00007FF7D2997084]
+	(No symbol) [0x00007FF7D2997220]
+	(No symbol) [0x00007FF7D298607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 16:46:06,877 - INFO - Edit mode already enabled on course: https://moodle.nu.edu.eg/course/view.php?id=13118
+2024-10-05 16:46:07,023 - INFO - Clicked 'Add section' button on course: https://moodle.nu.edu.eg/course/view.php?id=13118
+2024-10-05 16:46:10,090 - INFO - Clicked 'Edit section name' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=13118
+2024-10-05 17:40:01,915 - INFO - Content files found: ['CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf', 'Freshman Guidance Tips \U0001f60a.pdf', 'HW Presentation Topics.pdf']
+2024-10-05 17:40:19,076 - INFO - User logged in manually.
+2024-10-05 17:40:23,655 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:40:24,541 - INFO - Clicked 'Add section' button on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:40:27,585 - INFO - Clicked 'Edit section name' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:40:30,968 - INFO - Renamed last section to 'Week#1 Tutorial Content' using pyautogui on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:40:46,138 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2A1B125+29573]
+	(No symbol) [0x00007FF7D298FF50]
+	(No symbol) [0x00007FF7D284B6EA]
+	(No symbol) [0x00007FF7D289F815]
+	(No symbol) [0x00007FF7D289FA6C]
+	(No symbol) [0x00007FF7D28EB917]
+	(No symbol) [0x00007FF7D28C733F]
+	(No symbol) [0x00007FF7D28E86BC]
+	(No symbol) [0x00007FF7D28C70A3]
+	(No symbol) [0x00007FF7D28912DF]
+	(No symbol) [0x00007FF7D2892441]
+	GetHandleVerifier [0x00007FF7D2D4C76D+3377613]
+	GetHandleVerifier [0x00007FF7D2D97B67+3685831]
+	GetHandleVerifier [0x00007FF7D2D8CF8B+3641835]
+	GetHandleVerifier [0x00007FF7D2ADB2A6+816390]
+	(No symbol) [0x00007FF7D299B25F]
+	(No symbol) [0x00007FF7D2997084]
+	(No symbol) [0x00007FF7D2997220]
+	(No symbol) [0x00007FF7D298607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 17:40:48,309 - INFO - Browser closed. Script completed.
+2024-10-05 17:45:35,514 - INFO - Content files found: ['CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf', 'Freshman Guidance Tips \U0001f60a.pdf', 'HW Presentation Topics.pdf']
+2024-10-05 17:45:59,532 - INFO - User logged in manually.
+2024-10-05 17:46:03,302 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:46:03,302 - INFO - Skipping section creation and using the last section on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:46:04,224 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:46:12,753 - INFO - Clicked 'Add Folder' option on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:46:12,841 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:46:13,979 - INFO - Clicked 'Add...' button to upload files on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:46:14,521 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 17:46:14,588 - INFO - Clicked 'Upload this file' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:46:14,603 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2A1B125+29573]
+	(No symbol) [0x00007FF7D298FF50]
+	(No symbol) [0x00007FF7D284B6EA]
+	(No symbol) [0x00007FF7D28522BE]
+	(No symbol) [0x00007FF7D2854637]
+	(No symbol) [0x00007FF7D28546F0]
+	(No symbol) [0x00007FF7D28A06A2]
+	(No symbol) [0x00007FF7D28A0772]
+	(No symbol) [0x00007FF7D289652B]
+	(No symbol) [0x00007FF7D28C72FA]
+	(No symbol) [0x00007FF7D2892FF6]
+	(No symbol) [0x00007FF7D28C7510]
+	(No symbol) [0x00007FF7D28E86BC]
+	(No symbol) [0x00007FF7D28C70A3]
+	(No symbol) [0x00007FF7D28912DF]
+	(No symbol) [0x00007FF7D2892441]
+	GetHandleVerifier [0x00007FF7D2D4C76D+3377613]
+	GetHandleVerifier [0x00007FF7D2D97B67+3685831]
+	GetHandleVerifier [0x00007FF7D2D8CF8B+3641835]
+	GetHandleVerifier [0x00007FF7D2ADB2A6+816390]
+	(No symbol) [0x00007FF7D299B25F]
+	(No symbol) [0x00007FF7D2997084]
+	(No symbol) [0x00007FF7D2997220]
+	(No symbol) [0x00007FF7D298607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 17:46:16,765 - INFO - Browser closed. Script completed.
+2024-10-05 17:49:44,832 - INFO - Content files found: ['CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf', 'Freshman Guidance Tips \U0001f60a.pdf', 'HW Presentation Topics.pdf']
+2024-10-05 17:50:00,405 - INFO - Content files found: ['CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf', 'Freshman Guidance Tips \U0001f60a.pdf', 'HW Presentation Topics.pdf']
+2024-10-05 17:50:22,628 - INFO - User logged in manually.
+2024-10-05 17:50:30,527 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:50:31,438 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:50:38,828 - INFO - Clicked 'Add Folder' option on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:50:38,904 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:50:40,036 - INFO - Clicked 'Add...' button to upload files on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:50:41,082 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 17:50:41,144 - INFO - Clicked 'Upload this file' for content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 17:50:47,216 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: element click intercepted: Element <a role="button" title="Add..." class="btn btn-secondary btn-sm" href="#" id="yui_3_18_1_1_1728139837183_1193">...</a> is not clickable at point (635, 886). Other element would receive the click: <div class="yui3-widget-mask moodle-dialogue-lightbox" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 1042;"></div>
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2A1B125+29573]
+	(No symbol) [0x00007FF7D298FF50]
+	(No symbol) [0x00007FF7D284B6EA]
+	(No symbol) [0x00007FF7D28A74EE]
+	(No symbol) [0x00007FF7D28A4F3C]
+	(No symbol) [0x00007FF7D28A2408]
+	(No symbol) [0x00007FF7D28A161A]
+	(No symbol) [0x00007FF7D28936BE]
+	(No symbol) [0x00007FF7D28C72FA]
+	(No symbol) [0x00007FF7D2892FF6]
+	(No symbol) [0x00007FF7D28C7510]
+	(No symbol) [0x00007FF7D28E86BC]
+	(No symbol) [0x00007FF7D28C70A3]
+	(No symbol) [0x00007FF7D28912DF]
+	(No symbol) [0x00007FF7D2892441]
+	GetHandleVerifier [0x00007FF7D2D4C76D+3377613]
+	GetHandleVerifier [0x00007FF7D2D97B67+3685831]
+	GetHandleVerifier [0x00007FF7D2D8CF8B+3641835]
+	GetHandleVerifier [0x00007FF7D2ADB2A6+816390]
+	(No symbol) [0x00007FF7D299B25F]
+	(No symbol) [0x00007FF7D2997084]
+	(No symbol) [0x00007FF7D2997220]
+	(No symbol) [0x00007FF7D298607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 17:50:49,356 - INFO - Browser closed. Script completed.
+2024-10-05 17:52:37,855 - INFO - Content files found: ['CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf', 'Freshman Guidance Tips \U0001f60a.pdf', 'HW Presentation Topics.pdf']
+2024-10-05 17:52:54,075 - INFO - Content files found: ['CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf', 'Freshman Guidance Tips \U0001f60a.pdf', 'HW Presentation Topics.pdf']
+2024-10-05 17:53:08,956 - INFO - User logged in manually.
+2024-10-05 17:53:12,640 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:53:13,599 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:53:22,587 - INFO - Clicked 'Add Folder' option on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:53:31,438 - INFO - Clicked 'Add...' button to upload files on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:53:31,979 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 17:53:32,042 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:53:45,209 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2A1B125+29573]
+	(No symbol) [0x00007FF7D298FF50]
+	(No symbol) [0x00007FF7D284B6EA]
+	(No symbol) [0x00007FF7D289F815]
+	(No symbol) [0x00007FF7D289FA6C]
+	(No symbol) [0x00007FF7D28EB917]
+	(No symbol) [0x00007FF7D28C733F]
+	(No symbol) [0x00007FF7D28E86BC]
+	(No symbol) [0x00007FF7D28C70A3]
+	(No symbol) [0x00007FF7D28912DF]
+	(No symbol) [0x00007FF7D2892441]
+	GetHandleVerifier [0x00007FF7D2D4C76D+3377613]
+	GetHandleVerifier [0x00007FF7D2D97B67+3685831]
+	GetHandleVerifier [0x00007FF7D2D8CF8B+3641835]
+	GetHandleVerifier [0x00007FF7D2ADB2A6+816390]
+	(No symbol) [0x00007FF7D299B25F]
+	(No symbol) [0x00007FF7D2997084]
+	(No symbol) [0x00007FF7D2997220]
+	(No symbol) [0x00007FF7D298607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 17:53:47,351 - INFO - Browser closed. Script completed.
+2024-10-05 17:56:37,121 - INFO - Content files found: ['CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf', 'Freshman Guidance Tips \U0001f60a.pdf', 'HW Presentation Topics.pdf']
+2024-10-05 17:56:53,764 - INFO - User logged in manually.
+2024-10-05 17:57:16,373 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:57:17,235 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:57:27,780 - INFO - Clicked 'Add Folder' option on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:57:27,871 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:57:28,587 - INFO - Clicked 'Add...' button to upload files on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:57:29,145 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 17:57:29,205 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 17:57:44,362 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2A1B125+29573]
+	(No symbol) [0x00007FF7D298FF50]
+	(No symbol) [0x00007FF7D284B6EA]
+	(No symbol) [0x00007FF7D289F815]
+	(No symbol) [0x00007FF7D289FA6C]
+	(No symbol) [0x00007FF7D28EB917]
+	(No symbol) [0x00007FF7D28C733F]
+	(No symbol) [0x00007FF7D28E86BC]
+	(No symbol) [0x00007FF7D28C70A3]
+	(No symbol) [0x00007FF7D28912DF]
+	(No symbol) [0x00007FF7D2892441]
+	GetHandleVerifier [0x00007FF7D2D4C76D+3377613]
+	GetHandleVerifier [0x00007FF7D2D97B67+3685831]
+	GetHandleVerifier [0x00007FF7D2D8CF8B+3641835]
+	GetHandleVerifier [0x00007FF7D2ADB2A6+816390]
+	(No symbol) [0x00007FF7D299B25F]
+	(No symbol) [0x00007FF7D2997084]
+	(No symbol) [0x00007FF7D2997220]
+	(No symbol) [0x00007FF7D298607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 17:57:46,515 - INFO - Browser closed. Script completed.
+2024-10-05 18:10:54,753 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:10:55,722 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:11:01,205 - INFO - Clicked 'Add Folder' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:11:04,282 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:11:04,933 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:11:05,016 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:11:10,375 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:11:10,438 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:11:16,502 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: element click intercepted: Element <a role="button" title="Add..." class="btn btn-secondary btn-sm" href="#" id="yui_3_18_1_1_1728141058414_1193">...</a> is not clickable at point (635, 886). Other element would receive the click: <div class="yui3-widget-mask moodle-dialogue-lightbox" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 1044;"></div>
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2A1B125+29573]
+	(No symbol) [0x00007FF7D298FF50]
+	(No symbol) [0x00007FF7D284B6EA]
+	(No symbol) [0x00007FF7D28A74EE]
+	(No symbol) [0x00007FF7D28A4F3C]
+	(No symbol) [0x00007FF7D28A2408]
+	(No symbol) [0x00007FF7D28A161A]
+	(No symbol) [0x00007FF7D28936BE]
+	(No symbol) [0x00007FF7D28C72FA]
+	(No symbol) [0x00007FF7D2892FF6]
+	(No symbol) [0x00007FF7D28C7510]
+	(No symbol) [0x00007FF7D28E86BC]
+	(No symbol) [0x00007FF7D28C70A3]
+	(No symbol) [0x00007FF7D28912DF]
+	(No symbol) [0x00007FF7D2892441]
+	GetHandleVerifier [0x00007FF7D2D4C76D+3377613]
+	GetHandleVerifier [0x00007FF7D2D97B67+3685831]
+	GetHandleVerifier [0x00007FF7D2D8CF8B+3641835]
+	GetHandleVerifier [0x00007FF7D2ADB2A6+816390]
+	(No symbol) [0x00007FF7D299B25F]
+	(No symbol) [0x00007FF7D2997084]
+	(No symbol) [0x00007FF7D2997220]
+	(No symbol) [0x00007FF7D298607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 18:11:18,638 - INFO - Browser closed. Script completed.
+2024-10-05 18:13:25,626 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:13:26,492 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:13:31,947 - INFO - Clicked 'Add Folder' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:13:35,023 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:13:35,668 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:13:35,737 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:13:41,821 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: element click intercepted: Element <a role="button" title="Add..." class="btn btn-secondary btn-sm" href="#" id="yui_3_18_1_1_1728141209290_1193">...</a> is not clickable at point (635, 886). Other element would receive the click: <div class="yui3-widget-mask moodle-dialogue-lightbox" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 1042;"></div>
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2A1B125+29573]
+	(No symbol) [0x00007FF7D298FF50]
+	(No symbol) [0x00007FF7D284B6EA]
+	(No symbol) [0x00007FF7D28A74EE]
+	(No symbol) [0x00007FF7D28A4F3C]
+	(No symbol) [0x00007FF7D28A2408]
+	(No symbol) [0x00007FF7D28A161A]
+	(No symbol) [0x00007FF7D28936BE]
+	(No symbol) [0x00007FF7D28C72FA]
+	(No symbol) [0x00007FF7D2892FF6]
+	(No symbol) [0x00007FF7D28C7510]
+	(No symbol) [0x00007FF7D28E86BC]
+	(No symbol) [0x00007FF7D28C70A3]
+	(No symbol) [0x00007FF7D28912DF]
+	(No symbol) [0x00007FF7D2892441]
+	GetHandleVerifier [0x00007FF7D2D4C76D+3377613]
+	GetHandleVerifier [0x00007FF7D2D97B67+3685831]
+	GetHandleVerifier [0x00007FF7D2D8CF8B+3641835]
+	GetHandleVerifier [0x00007FF7D2ADB2A6+816390]
+	(No symbol) [0x00007FF7D299B25F]
+	(No symbol) [0x00007FF7D2997084]
+	(No symbol) [0x00007FF7D2997220]
+	(No symbol) [0x00007FF7D298607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 18:13:43,960 - INFO - Browser closed. Script completed.
+2024-10-05 18:19:37,856 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:19:38,750 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:19:45,426 - INFO - Clicked 'Add Folder' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:19:48,497 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:19:49,144 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:19:49,162 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:19:49,221 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:19:53,306 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: element click intercepted: Element <a role="button" title="Add..." class="btn btn-secondary btn-sm" href="#" id="yui_3_18_1_1_1728141581500_1193">...</a> is not clickable at point (635, 886). Other element would receive the click: <div class="yui3-widget-mask moodle-dialogue-lightbox" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 1042;"></div>
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2A1B125+29573]
+	(No symbol) [0x00007FF7D298FF50]
+	(No symbol) [0x00007FF7D284B6EA]
+	(No symbol) [0x00007FF7D28A74EE]
+	(No symbol) [0x00007FF7D28A4F3C]
+	(No symbol) [0x00007FF7D28A2408]
+	(No symbol) [0x00007FF7D28A161A]
+	(No symbol) [0x00007FF7D28936BE]
+	(No symbol) [0x00007FF7D28C72FA]
+	(No symbol) [0x00007FF7D2892FF6]
+	(No symbol) [0x00007FF7D28C7510]
+	(No symbol) [0x00007FF7D28E86BC]
+	(No symbol) [0x00007FF7D28C70A3]
+	(No symbol) [0x00007FF7D28912DF]
+	(No symbol) [0x00007FF7D2892441]
+	GetHandleVerifier [0x00007FF7D2D4C76D+3377613]
+	GetHandleVerifier [0x00007FF7D2D97B67+3685831]
+	GetHandleVerifier [0x00007FF7D2D8CF8B+3641835]
+	GetHandleVerifier [0x00007FF7D2ADB2A6+816390]
+	(No symbol) [0x00007FF7D299B25F]
+	(No symbol) [0x00007FF7D2997084]
+	(No symbol) [0x00007FF7D2997220]
+	(No symbol) [0x00007FF7D298607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 18:19:55,429 - INFO - Browser closed. Script completed.
+2024-10-05 18:26:08,332 - INFO - User logged in manually.
+2024-10-05 18:26:12,191 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:26:13,093 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:26:21,061 - INFO - Clicked 'Add Folder' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:26:24,136 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:26:24,783 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:26:24,800 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:26:24,865 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:26:28,928 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: element click intercepted: Element <a role="button" title="Add..." class="btn btn-secondary btn-sm" href="#" id="yui_3_18_1_1_1728141975798_1193">...</a> is not clickable at point (635, 886). Other element would receive the click: <div class="yui3-widget-mask moodle-dialogue-lightbox" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 1042;"></div>
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2A1B125+29573]
+	(No symbol) [0x00007FF7D298FF50]
+	(No symbol) [0x00007FF7D284B6EA]
+	(No symbol) [0x00007FF7D28A74EE]
+	(No symbol) [0x00007FF7D28A4F3C]
+	(No symbol) [0x00007FF7D28A2408]
+	(No symbol) [0x00007FF7D28A161A]
+	(No symbol) [0x00007FF7D28936BE]
+	(No symbol) [0x00007FF7D28C72FA]
+	(No symbol) [0x00007FF7D2892FF6]
+	(No symbol) [0x00007FF7D28C7510]
+	(No symbol) [0x00007FF7D28E86BC]
+	(No symbol) [0x00007FF7D28C70A3]
+	(No symbol) [0x00007FF7D28912DF]
+	(No symbol) [0x00007FF7D2892441]
+	GetHandleVerifier [0x00007FF7D2D4C76D+3377613]
+	GetHandleVerifier [0x00007FF7D2D97B67+3685831]
+	GetHandleVerifier [0x00007FF7D2D8CF8B+3641835]
+	GetHandleVerifier [0x00007FF7D2ADB2A6+816390]
+	(No symbol) [0x00007FF7D299B25F]
+	(No symbol) [0x00007FF7D2997084]
+	(No symbol) [0x00007FF7D2997220]
+	(No symbol) [0x00007FF7D298607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 18:26:29,989 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: element click intercepted: Element <a role="button" title="Add..." class="btn btn-secondary btn-sm" href="#" id="yui_3_18_1_1_1728141975798_1193">...</a> is not clickable at point (635, 886). Other element would receive the click: <div class="yui3-widget-mask moodle-dialogue-lightbox" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 1042;"></div>
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2A1B125+29573]
+	(No symbol) [0x00007FF7D298FF50]
+	(No symbol) [0x00007FF7D284B6EA]
+	(No symbol) [0x00007FF7D28A74EE]
+	(No symbol) [0x00007FF7D28A4F3C]
+	(No symbol) [0x00007FF7D28A2408]
+	(No symbol) [0x00007FF7D28A161A]
+	(No symbol) [0x00007FF7D28936BE]
+	(No symbol) [0x00007FF7D28C72FA]
+	(No symbol) [0x00007FF7D2892FF6]
+	(No symbol) [0x00007FF7D28C7510]
+	(No symbol) [0x00007FF7D28E86BC]
+	(No symbol) [0x00007FF7D28C70A3]
+	(No symbol) [0x00007FF7D28912DF]
+	(No symbol) [0x00007FF7D2892441]
+	GetHandleVerifier [0x00007FF7D2D4C76D+3377613]
+	GetHandleVerifier [0x00007FF7D2D97B67+3685831]
+	GetHandleVerifier [0x00007FF7D2D8CF8B+3641835]
+	GetHandleVerifier [0x00007FF7D2ADB2A6+816390]
+	(No symbol) [0x00007FF7D299B25F]
+	(No symbol) [0x00007FF7D2997084]
+	(No symbol) [0x00007FF7D2997220]
+	(No symbol) [0x00007FF7D298607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 18:26:35,042 - INFO - Saved folder and returned to course on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:26:37,178 - INFO - Browser closed. Script completed.
+2024-10-05 18:28:48,996 - INFO - User logged in manually.
+2024-10-05 18:28:53,022 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:28:54,227 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:29:02,820 - INFO - Clicked 'Add Folder' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:29:05,904 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:29:06,556 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:29:06,572 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:29:06,639 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:29:11,725 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:29:11,742 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:29:11,799 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:29:17,861 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: element click intercepted: Element <a role="button" title="Add..." class="btn btn-secondary btn-sm" href="#" id="yui_3_18_1_1_1728142137031_1194">...</a> is not clickable at point (635, 886). Other element would receive the click: <div class="yui3-widget-mask moodle-dialogue-lightbox" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 1044;"></div>
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2A1B125+29573]
+	(No symbol) [0x00007FF7D298FF50]
+	(No symbol) [0x00007FF7D284B6EA]
+	(No symbol) [0x00007FF7D28A74EE]
+	(No symbol) [0x00007FF7D28A4F3C]
+	(No symbol) [0x00007FF7D28A2408]
+	(No symbol) [0x00007FF7D28A161A]
+	(No symbol) [0x00007FF7D28936BE]
+	(No symbol) [0x00007FF7D28C72FA]
+	(No symbol) [0x00007FF7D2892FF6]
+	(No symbol) [0x00007FF7D28C7510]
+	(No symbol) [0x00007FF7D28E86BC]
+	(No symbol) [0x00007FF7D28C70A3]
+	(No symbol) [0x00007FF7D28912DF]
+	(No symbol) [0x00007FF7D2892441]
+	GetHandleVerifier [0x00007FF7D2D4C76D+3377613]
+	GetHandleVerifier [0x00007FF7D2D97B67+3685831]
+	GetHandleVerifier [0x00007FF7D2D8CF8B+3641835]
+	GetHandleVerifier [0x00007FF7D2ADB2A6+816390]
+	(No symbol) [0x00007FF7D299B25F]
+	(No symbol) [0x00007FF7D2997084]
+	(No symbol) [0x00007FF7D2997220]
+	(No symbol) [0x00007FF7D298607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 18:29:24,119 - INFO - Saved folder and returned to course on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:29:26,270 - INFO - Browser closed. Script completed.
+2024-10-05 18:32:17,756 - INFO - User logged in manually.
+2024-10-05 18:32:28,423 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:32:29,430 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:32:35,424 - INFO - Clicked 'Add Folder' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:32:38,497 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:32:38,497 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:32:38,613 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:32:40,641 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:32:40,659 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:32:40,726 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:32:45,727 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:32:47,728 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:32:47,792 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:32:49,815 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:32:49,829 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:32:49,885 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:32:54,886 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:32:56,887 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:32:57,946 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: element click intercepted: Element <a role="button" title="Add..." class="btn btn-secondary btn-sm" href="#" id="yui_3_18_1_1_1728142352011_1193">...</a> is not clickable at point (635, 886). Other element would receive the click: <div class="yui3-widget-mask moodle-dialogue-lightbox" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 1044;"></div>
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2A1B125+29573]
+	(No symbol) [0x00007FF7D298FF50]
+	(No symbol) [0x00007FF7D284B6EA]
+	(No symbol) [0x00007FF7D28A74EE]
+	(No symbol) [0x00007FF7D28A4F3C]
+	(No symbol) [0x00007FF7D28A2408]
+	(No symbol) [0x00007FF7D28A161A]
+	(No symbol) [0x00007FF7D28936BE]
+	(No symbol) [0x00007FF7D28C72FA]
+	(No symbol) [0x00007FF7D2892FF6]
+	(No symbol) [0x00007FF7D28C7510]
+	(No symbol) [0x00007FF7D28E86BC]
+	(No symbol) [0x00007FF7D28C70A3]
+	(No symbol) [0x00007FF7D28912DF]
+	(No symbol) [0x00007FF7D2892441]
+	GetHandleVerifier [0x00007FF7D2D4C76D+3377613]
+	GetHandleVerifier [0x00007FF7D2D97B67+3685831]
+	GetHandleVerifier [0x00007FF7D2D8CF8B+3641835]
+	GetHandleVerifier [0x00007FF7D2ADB2A6+816390]
+	(No symbol) [0x00007FF7D299B25F]
+	(No symbol) [0x00007FF7D2997084]
+	(No symbol) [0x00007FF7D2997220]
+	(No symbol) [0x00007FF7D298607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 18:32:59,003 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: element click intercepted: Element <a role="button" title="Add..." class="btn btn-secondary btn-sm" href="#" id="yui_3_18_1_1_1728142352011_1193">...</a> is not clickable at point (635, 886). Other element would receive the click: <div class="yui3-widget-mask moodle-dialogue-lightbox" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 1044;"></div>
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2A1B125+29573]
+	(No symbol) [0x00007FF7D298FF50]
+	(No symbol) [0x00007FF7D284B6EA]
+	(No symbol) [0x00007FF7D28A74EE]
+	(No symbol) [0x00007FF7D28A4F3C]
+	(No symbol) [0x00007FF7D28A2408]
+	(No symbol) [0x00007FF7D28A161A]
+	(No symbol) [0x00007FF7D28936BE]
+	(No symbol) [0x00007FF7D28C72FA]
+	(No symbol) [0x00007FF7D2892FF6]
+	(No symbol) [0x00007FF7D28C7510]
+	(No symbol) [0x00007FF7D28E86BC]
+	(No symbol) [0x00007FF7D28C70A3]
+	(No symbol) [0x00007FF7D28912DF]
+	(No symbol) [0x00007FF7D2892441]
+	GetHandleVerifier [0x00007FF7D2D4C76D+3377613]
+	GetHandleVerifier [0x00007FF7D2D97B67+3685831]
+	GetHandleVerifier [0x00007FF7D2D8CF8B+3641835]
+	GetHandleVerifier [0x00007FF7D2ADB2A6+816390]
+	(No symbol) [0x00007FF7D299B25F]
+	(No symbol) [0x00007FF7D2997084]
+	(No symbol) [0x00007FF7D2997220]
+	(No symbol) [0x00007FF7D298607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 18:33:00,060 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: element click intercepted: Element <a role="button" title="Add..." class="btn btn-secondary btn-sm" href="#" id="yui_3_18_1_1_1728142352011_1193">...</a> is not clickable at point (635, 886). Other element would receive the click: <div class="yui3-widget-mask moodle-dialogue-lightbox" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 1044;"></div>
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2A1B125+29573]
+	(No symbol) [0x00007FF7D298FF50]
+	(No symbol) [0x00007FF7D284B6EA]
+	(No symbol) [0x00007FF7D28A74EE]
+	(No symbol) [0x00007FF7D28A4F3C]
+	(No symbol) [0x00007FF7D28A2408]
+	(No symbol) [0x00007FF7D28A161A]
+	(No symbol) [0x00007FF7D28936BE]
+	(No symbol) [0x00007FF7D28C72FA]
+	(No symbol) [0x00007FF7D2892FF6]
+	(No symbol) [0x00007FF7D28C7510]
+	(No symbol) [0x00007FF7D28E86BC]
+	(No symbol) [0x00007FF7D28C70A3]
+	(No symbol) [0x00007FF7D28912DF]
+	(No symbol) [0x00007FF7D2892441]
+	GetHandleVerifier [0x00007FF7D2D4C76D+3377613]
+	GetHandleVerifier [0x00007FF7D2D97B67+3685831]
+	GetHandleVerifier [0x00007FF7D2D8CF8B+3641835]
+	GetHandleVerifier [0x00007FF7D2ADB2A6+816390]
+	(No symbol) [0x00007FF7D299B25F]
+	(No symbol) [0x00007FF7D2997084]
+	(No symbol) [0x00007FF7D2997220]
+	(No symbol) [0x00007FF7D298607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 18:33:01,112 - ERROR - Failed to upload content on course: https://moodle.nu.edu.eg/course/view.php?id=11784 - Error: Message: element click intercepted: Element <a role="button" title="Add..." class="btn btn-secondary btn-sm" href="#" id="yui_3_18_1_1_1728142352011_1193">...</a> is not clickable at point (635, 886). Other element would receive the click: <div class="yui3-widget-mask moodle-dialogue-lightbox" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 1044;"></div>
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2A1B125+29573]
+	(No symbol) [0x00007FF7D298FF50]
+	(No symbol) [0x00007FF7D284B6EA]
+	(No symbol) [0x00007FF7D28A74EE]
+	(No symbol) [0x00007FF7D28A4F3C]
+	(No symbol) [0x00007FF7D28A2408]
+	(No symbol) [0x00007FF7D28A161A]
+	(No symbol) [0x00007FF7D28936BE]
+	(No symbol) [0x00007FF7D28C72FA]
+	(No symbol) [0x00007FF7D2892FF6]
+	(No symbol) [0x00007FF7D28C7510]
+	(No symbol) [0x00007FF7D28E86BC]
+	(No symbol) [0x00007FF7D28C70A3]
+	(No symbol) [0x00007FF7D28912DF]
+	(No symbol) [0x00007FF7D2892441]
+	GetHandleVerifier [0x00007FF7D2D4C76D+3377613]
+	GetHandleVerifier [0x00007FF7D2D97B67+3685831]
+	GetHandleVerifier [0x00007FF7D2D8CF8B+3641835]
+	GetHandleVerifier [0x00007FF7D2ADB2A6+816390]
+	(No symbol) [0x00007FF7D299B25F]
+	(No symbol) [0x00007FF7D2997084]
+	(No symbol) [0x00007FF7D2997220]
+	(No symbol) [0x00007FF7D298607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-05 18:33:03,810 - INFO - Saved folder and returned to course on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:33:05,951 - INFO - Browser closed. Script completed.
+2024-10-05 18:37:43,092 - INFO - User logged in manually.
+2024-10-05 18:37:46,770 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:37:47,701 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:37:55,510 - INFO - Clicked 'Add Folder' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:37:58,583 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:37:58,583 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:37:58,694 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:37:59,231 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:37:59,248 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:37:59,317 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:38:05,007 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:38:05,026 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:38:07,028 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:38:07,132 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:38:07,178 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:38:07,200 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:38:07,261 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:38:18,094 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:38:18,117 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:38:20,119 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:38:20,185 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:38:20,212 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:38:20,227 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:38:20,291 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:38:20,826 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:38:20,848 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:38:23,589 - INFO - Saved folder and returned to course on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 18:38:25,746 - INFO - Browser closed. Script completed.
+2024-10-05 18:52:57,332 - INFO - User logged in manually.
+2024-10-05 18:53:01,170 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=12055
+2024-10-05 18:53:02,108 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=12055
+2024-10-05 18:53:08,203 - INFO - Clicked 'Add Folder' on course: https://moodle.nu.edu.eg/course/view.php?id=12055
+2024-10-05 18:53:11,275 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=12055
+2024-10-05 18:53:11,276 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:53:11,390 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:53:12,434 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:53:12,450 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:53:12,518 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=12055
+2024-10-05 18:53:20,278 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:53:20,297 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:53:22,299 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:53:22,377 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:53:22,403 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:53:22,420 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:53:22,473 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=12055
+2024-10-05 18:53:33,851 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:53:33,879 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:53:35,880 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:53:35,945 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:53:35,973 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:53:35,991 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:53:36,056 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=12055
+2024-10-05 18:53:37,102 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:53:37,120 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:53:39,122 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:53:39,196 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:53:39,225 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:53:39,240 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:53:39,304 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=12055
+2024-10-05 18:53:40,351 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:53:40,369 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:53:43,463 - INFO - Saved folder and returned to course on course: https://moodle.nu.edu.eg/course/view.php?id=12055
+2024-10-05 18:53:47,031 - INFO - Edit mode already enabled on course: https://moodle.nu.edu.eg/course/view.php?id=12059
+2024-10-05 18:53:47,073 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=12059
+2024-10-05 18:53:50,220 - INFO - Clicked 'Add Folder' on course: https://moodle.nu.edu.eg/course/view.php?id=12059
+2024-10-05 18:53:53,293 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=12059
+2024-10-05 18:53:53,293 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:53:53,400 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:53:54,450 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:53:54,466 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:53:54,537 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=12059
+2024-10-05 18:54:01,256 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:54:01,272 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:54:03,275 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:54:03,345 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:54:03,392 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:54:03,410 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:54:03,479 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=12059
+2024-10-05 18:54:15,402 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:54:15,421 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:54:17,422 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:54:17,489 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:54:17,517 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:54:17,534 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:54:17,594 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=12059
+2024-10-05 18:54:18,644 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:54:18,667 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:54:20,668 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:54:20,732 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:54:20,759 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:54:20,776 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:54:20,831 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=12059
+2024-10-05 18:54:21,360 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:54:21,379 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:54:24,546 - INFO - Saved folder and returned to course on course: https://moodle.nu.edu.eg/course/view.php?id=12059
+2024-10-05 18:54:28,056 - INFO - Edit mode already enabled on course: https://moodle.nu.edu.eg/course/view.php?id=13118
+2024-10-05 18:54:28,113 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=13118
+2024-10-05 18:54:32,184 - INFO - Clicked 'Add Folder' on course: https://moodle.nu.edu.eg/course/view.php?id=13118
+2024-10-05 18:54:35,256 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=13118
+2024-10-05 18:54:35,256 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:54:35,370 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:54:35,901 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:54:35,913 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:54:35,967 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13118
+2024-10-05 18:54:40,104 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:54:40,122 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:54:42,124 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:54:42,184 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:54:42,211 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:54:42,227 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:54:42,291 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13118
+2024-10-05 18:54:54,239 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:54:54,272 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:54:56,273 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:54:56,347 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:54:56,377 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:54:56,392 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:54:56,457 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13118
+2024-10-05 18:54:57,502 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:54:57,521 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:54:59,522 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:54:59,582 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:54:59,607 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:54:59,623 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:54:59,682 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13118
+2024-10-05 18:55:00,213 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:55:00,230 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:55:04,634 - INFO - Saved folder and returned to course on course: https://moodle.nu.edu.eg/course/view.php?id=13118
+2024-10-05 18:55:08,996 - INFO - Edit mode already enabled on course: https://moodle.nu.edu.eg/course/view.php?id=13119
+2024-10-05 18:55:09,052 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=13119
+2024-10-05 18:55:12,265 - INFO - Clicked 'Add Folder' on course: https://moodle.nu.edu.eg/course/view.php?id=13119
+2024-10-05 18:55:15,334 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=13119
+2024-10-05 18:55:15,334 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:55:15,449 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:55:15,981 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:55:15,997 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:55:16,054 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13119
+2024-10-05 18:55:21,223 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:55:21,242 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:55:23,243 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:55:23,332 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:55:23,356 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:55:23,372 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:55:23,438 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13119
+2024-10-05 18:55:37,899 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:55:37,919 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:55:39,920 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:55:39,988 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:55:40,019 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:55:40,036 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:55:40,101 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13119
+2024-10-05 18:55:41,662 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:55:41,679 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:55:43,680 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:55:43,740 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:55:43,768 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:55:43,782 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:55:43,851 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13119
+2024-10-05 18:55:44,902 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:55:44,918 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:55:48,175 - INFO - Saved folder and returned to course on course: https://moodle.nu.edu.eg/course/view.php?id=13119
+2024-10-05 18:55:51,657 - INFO - Edit mode already enabled on course: https://moodle.nu.edu.eg/course/view.php?id=13120
+2024-10-05 18:55:51,716 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=13120
+2024-10-05 18:55:54,743 - INFO - Clicked 'Add Folder' on course: https://moodle.nu.edu.eg/course/view.php?id=13120
+2024-10-05 18:55:57,809 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=13120
+2024-10-05 18:55:57,810 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:55:57,919 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:55:58,448 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:55:58,460 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:55:58,515 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13120
+2024-10-05 18:56:03,168 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:56:03,186 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:56:05,187 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:56:05,250 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:56:05,279 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:56:05,293 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:56:05,357 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13120
+2024-10-05 18:56:17,750 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:56:17,766 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:56:19,767 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:56:19,831 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:56:19,860 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:56:19,877 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:56:19,943 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13120
+2024-10-05 18:56:20,986 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:56:21,003 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:56:23,004 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:56:23,072 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:56:23,099 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:56:23,116 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:56:23,180 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13120
+2024-10-05 18:56:23,710 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:56:23,728 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:56:26,612 - INFO - Saved folder and returned to course on course: https://moodle.nu.edu.eg/course/view.php?id=13120
+2024-10-05 18:56:30,073 - INFO - Edit mode already enabled on course: https://moodle.nu.edu.eg/course/view.php?id=13121
+2024-10-05 18:56:30,115 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=13121
+2024-10-05 18:56:32,974 - INFO - Clicked 'Add Folder' on course: https://moodle.nu.edu.eg/course/view.php?id=13121
+2024-10-05 18:56:36,041 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=13121
+2024-10-05 18:56:36,041 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:56:36,149 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:56:36,679 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:56:36,691 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:56:36,747 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13121
+2024-10-05 18:56:41,398 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:56:41,415 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:56:43,417 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:56:43,479 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:56:43,505 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:56:43,522 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:56:43,582 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13121
+2024-10-05 18:56:54,939 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:56:54,955 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:56:56,957 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:56:57,019 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:56:57,047 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:56:57,064 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:56:57,126 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13121
+2024-10-05 18:56:58,171 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:56:58,188 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:57:00,189 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:57:00,250 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:57:00,276 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:57:00,293 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:57:00,350 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13121
+2024-10-05 18:57:00,880 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:57:00,896 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:57:03,990 - INFO - Saved folder and returned to course on course: https://moodle.nu.edu.eg/course/view.php?id=13121
+2024-10-05 18:57:07,529 - INFO - Edit mode already enabled on course: https://moodle.nu.edu.eg/course/view.php?id=13122
+2024-10-05 18:57:07,570 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=13122
+2024-10-05 18:57:10,446 - INFO - Clicked 'Add Folder' on course: https://moodle.nu.edu.eg/course/view.php?id=13122
+2024-10-05 18:57:13,508 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=13122
+2024-10-05 18:57:13,508 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:57:13,608 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:57:14,138 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:57:14,153 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:57:14,208 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13122
+2024-10-05 18:57:18,351 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:57:18,368 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:57:20,369 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:57:20,430 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:57:20,457 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:57:20,472 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:57:20,542 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13122
+2024-10-05 18:57:31,394 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:57:31,418 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:57:33,419 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:57:33,486 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:57:33,513 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:57:33,530 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:57:33,590 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13122
+2024-10-05 18:57:34,635 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:57:34,651 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:57:36,653 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:57:36,713 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:57:36,741 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:57:36,754 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:57:36,817 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13122
+2024-10-05 18:57:37,349 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:57:37,366 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:57:40,498 - INFO - Saved folder and returned to course on course: https://moodle.nu.edu.eg/course/view.php?id=13122
+2024-10-05 18:57:43,943 - INFO - Edit mode already enabled on course: https://moodle.nu.edu.eg/course/view.php?id=13123
+2024-10-05 18:57:44,003 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=13123
+2024-10-05 18:57:47,335 - INFO - Clicked 'Add Folder' on course: https://moodle.nu.edu.eg/course/view.php?id=13123
+2024-10-05 18:57:50,402 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=13123
+2024-10-05 18:57:50,402 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:57:50,512 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:57:51,042 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:57:51,054 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:57:51,108 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13123
+2024-10-05 18:57:57,826 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:57:57,841 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:57:59,842 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:57:59,902 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:57:59,949 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:57:59,965 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:58:00,029 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13123
+2024-10-05 18:58:11,904 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:58:11,925 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:58:13,926 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:58:13,988 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:58:14,017 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:58:14,032 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:58:14,094 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13123
+2024-10-05 18:58:15,659 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:58:15,675 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:58:17,676 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:58:17,735 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:58:17,762 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:58:17,779 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:58:17,847 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13123
+2024-10-05 18:58:18,383 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:58:18,405 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:58:22,057 - INFO - Saved folder and returned to course on course: https://moodle.nu.edu.eg/course/view.php?id=13123
+2024-10-05 18:58:25,486 - INFO - Edit mode already enabled on course: https://moodle.nu.edu.eg/course/view.php?id=13052
+2024-10-05 18:58:25,527 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=13052
+2024-10-05 18:58:29,091 - INFO - Clicked 'Add Folder' on course: https://moodle.nu.edu.eg/course/view.php?id=13052
+2024-10-05 18:58:32,159 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=13052
+2024-10-05 18:58:32,160 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:58:32,270 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:58:32,806 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:58:32,820 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:58:32,874 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13052
+2024-10-05 18:58:38,556 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:58:38,572 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:58:40,574 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:58:40,637 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:58:40,666 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:58:40,680 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:58:40,743 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13052
+2024-10-05 18:58:53,132 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:58:53,152 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:58:55,153 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:58:55,214 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:58:55,242 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:58:55,257 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:58:55,320 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13052
+2024-10-05 18:58:56,367 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:58:56,387 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:58:58,388 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:58:58,462 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:58:58,494 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:58:58,509 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:58:58,577 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13052
+2024-10-05 18:58:59,108 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:58:59,125 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:59:01,921 - INFO - Saved folder and returned to course on course: https://moodle.nu.edu.eg/course/view.php?id=13052
+2024-10-05 18:59:05,755 - INFO - Edit mode already enabled on course: https://moodle.nu.edu.eg/course/view.php?id=13053
+2024-10-05 18:59:05,812 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=13053
+2024-10-05 18:59:08,700 - INFO - Clicked 'Add Folder' on course: https://moodle.nu.edu.eg/course/view.php?id=13053
+2024-10-05 18:59:11,771 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=13053
+2024-10-05 18:59:11,771 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:59:11,876 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:59:12,409 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:59:12,422 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:59:12,475 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13053
+2024-10-05 18:59:17,134 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:59:17,159 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:59:19,159 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:59:19,222 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:59:19,248 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:59:19,265 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:59:19,326 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13053
+2024-10-05 18:59:31,717 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 18:59:31,732 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:59:33,734 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:59:33,799 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:59:33,829 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:59:33,845 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:59:33,908 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13053
+2024-10-05 18:59:34,955 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 18:59:34,972 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:59:36,973 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:59:37,034 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:59:37,062 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:59:37,078 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:59:37,143 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13053
+2024-10-05 18:59:37,674 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 18:59:37,695 - INFO - Preparing for next file upload (if any)
+2024-10-05 18:59:40,478 - INFO - Saved folder and returned to course on course: https://moodle.nu.edu.eg/course/view.php?id=13053
+2024-10-05 18:59:43,884 - INFO - Edit mode already enabled on course: https://moodle.nu.edu.eg/course/view.php?id=13054
+2024-10-05 18:59:43,925 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=13054
+2024-10-05 18:59:48,969 - INFO - Clicked 'Add Folder' on course: https://moodle.nu.edu.eg/course/view.php?id=13054
+2024-10-05 18:59:52,032 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=13054
+2024-10-05 18:59:52,032 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:59:52,132 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 18:59:52,678 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:59:52,692 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 18:59:52,743 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13054
+2024-10-05 19:00:02,100 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-05 19:00:02,131 - INFO - Preparing for next file upload (if any)
+2024-10-05 19:00:04,133 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 19:00:04,388 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 19:00:04,444 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 19:00:04,480 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 19:00:04,571 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13054
+2024-10-05 19:00:19,051 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\Freshman Guidance Tips \U0001f60a.pdf
+2024-10-05 19:00:19,068 - INFO - Preparing for next file upload (if any)
+2024-10-05 19:00:21,069 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 19:00:21,132 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 19:00:21,160 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 19:00:21,177 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 19:00:21,248 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13054
+2024-10-05 19:00:22,292 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\How to Choose Your Laptop for CS Students.pdf
+2024-10-05 19:00:22,317 - INFO - Preparing for next file upload (if any)
+2024-10-05 19:00:24,318 - INFO - Attempting to upload content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 19:00:24,401 - INFO - Clicked 'Add...' button to open file upload dialog
+2024-10-05 19:00:24,436 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 19:00:24,451 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 19:00:24,511 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf on course: https://moodle.nu.edu.eg/course/view.php?id=13054
+2024-10-05 19:00:25,038 - INFO - Upload dialog closed for E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 19:00:25,059 - INFO - Preparing for next file upload (if any)
+2024-10-05 19:00:27,944 - INFO - Saved folder and returned to course on course: https://moodle.nu.edu.eg/course/view.php?id=13054
+2024-10-05 19:00:30,106 - INFO - Browser closed. Script completed.
