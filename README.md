@@ -1,68 +1,128 @@
 
-# Moodle Announcement Automation Script
+# Moodle Multi-Announcement Automation Script
 
-This script automates posting announcements on multiple Moodle forums using Selenium WebDriver. The script opens the Moodle login page, waits for manual login via Microsoft 365 SSO, and then posts announcements to each forum.
+This project automates posting announcements to multiple Moodle forums using Selenium. It also supports uploading attachments if present and handles login via Microsoft 365 SSO.
 
 ## Features
 
-- Posts a custom subject and message to multiple Moodle forums.
-- Supports manual login (you enter your credentials, and the script continues).
-- Logs all actions and errors in a log file (`moodle_announcement_log.txt`).
-- Reads the announcement subject from `input/subject.txt`, the message from `input/message.txt`, and the forum links from `input/links.txt`.
+- Automatically posts announcements to multiple Moodle courses.
+- Supports file attachments.
+- Handles Microsoft 365 SSO login.
+- Waits for overlays (lightboxes) and ensures proper element interaction.
+- Logs all actions to help troubleshoot any issues.
 
 ## Prerequisites
 
-- Python 3.x
-- Selenium package
-- Google Chrome installed
-- ChromeDriver (compatible with your version of Chrome)
+1. **Google Chrome**: Ensure you have the latest version of Chrome installed.
+2. **ChromeDriver**: The version of ChromeDriver should match the version of Chrome installed. Download it from [here](https://sites.google.com/a/chromium.org/chromedriver/downloads).
+3. **Python**: Ensure you have Python installed (version 3.x). You can download it from [here](https://www.python.org/downloads/).
 
 ## Installation
 
-1. **Clone the repository** or download the script files.
-2. **Install the required Python packages** using pip:
+1. **Clone this repository** to your local machine:
+
+   ```bash
+   git clone <repository_url>
+   ```
+
+2. **Install the required Python packages**:
 
    ```bash
    pip install selenium
    ```
 
-3. **Download ChromeDriver** and place it in the project root directory. Ensure the version matches your installed Chrome browser version. [Download ChromeDriver](https://sites.google.com/chromium.org/driver/)
+3. **Place the ChromeDriver in the root directory** of your project (next to the script).
 
-4. **Create the `input` folder** and place the following files inside:
-   - **input/subject.txt**: The first line of this file should contain the announcement subject.
-   - **input/message.txt**: The entire contents of this file will be treated as the message body. This can span multiple lines.
-   - **input/links.txt**: Each line of this file should contain a URL to a forum where the announcement will be posted.
+4. **Project Folder Structure**:
 
-## Usage
+   ```
+   project-root/
+   ├── chromedriver.exe
+   ├── moodle_multi_announcement_log.txt
+   ├── input/
+   │   ├── links.txt           # File containing the Moodle forum links.
+   │   ├── subject.txt         # File containing the subject of the announcement.
+   │   ├── message.txt         # File containing the message body of the announcement.
+   │   └── attachments/        # Folder containing files to be attached (optional).
+   └── main.py
+   ```
 
-1. **Run the script**:
+## Input Files
+
+1. **`links.txt`**: Contains the URLs of the Moodle forums where announcements will be posted. Each URL should be on a new line.
+
+2. **`subject.txt`**: The subject/title of the announcement.
+
+3. **`message.txt`**: The body content of the announcement.
+
+4. **`attachments/` folder**: Contains any files that need to be attached with the announcement. This folder can be empty if no attachments are needed.
+
+## How to Use
+
+1. **Prepare Input Files**:
+   - Fill `input/links.txt` with the Moodle forum URLs.
+   - Write the subject and message for your announcement in `input/subject.txt` and `input/message.txt`.
+   - Place any files you want to attach inside the `input/attachments/` folder.
+
+2. **Run the Script**:
+
+   Open your terminal or command prompt, navigate to the project root, and run:
 
    ```bash
    python main.py
    ```
 
-2. **Manual Login**: The script will open the Moodle login page. You need to log in manually using your Microsoft 365 credentials.
-3. **Posting Announcements**: After login, the script will automatically post the specified announcement to the provided Moodle forum URLs.
+3. **Login to Moodle**:
+   - Once the script opens the browser, log in to Moodle using your Microsoft 365 credentials manually.
+   - After logging in, go back to the terminal and press **Enter** to continue.
 
-## Configuration
+4. **Automatic Posting**:
+   - The script will loop through each forum link in `links.txt` and post the announcement.
+   - If there are attachments, it will upload the files and submit the post.
+   - Once finished, the browser will close automatically.
 
-### Forum URLs
+## Logs
 
-The forum URLs are read from the `input/links.txt` file. Each line should contain a separate forum URL.
+All actions are logged in `moodle_multi_announcement_log.txt`. This includes any errors or issues encountered during the process.
 
-### Announcement Files
+## Example
 
-The script reads the announcement subject from `input/subject.txt` and the message from `input/message.txt`. Ensure these files exist in the `input` folder.
+Here’s an example of what the `links.txt`, `subject.txt`, and `message.txt` might look like:
 
-### Logging
+### `input/links.txt`
 
-The script logs all activity (successful posts and errors) in `moodle_announcement_log.txt`. Check this file after the script runs to view the results.
+```
+https://moodle.nu.edu.eg/mod/forum/view.php?id=123456
+https://moodle.nu.edu.eg/mod/forum/view.php?id=789012
+```
+
+### `input/subject.txt`
+
+```
+Important Update on Homework Submission
+```
+
+### `input/message.txt`
+
+```
+Dear Students,
+
+Please note that the deadline for the homework submission has been extended to Friday, October 15th. Make sure to submit all assignments before the new deadline.
+
+Best regards,
+Your Instructor
+```
+
+### Attachments
+
+Simply place the files you want to attach in the `input/attachments/` folder. The script will automatically detect and upload them with the announcement.
 
 ## Troubleshooting
 
-- Ensure you have the correct version of ChromeDriver that matches your installed Chrome browser.
-- If the script fails to find elements on the page, ensure that the correct CSS selectors or IDs are being used.
+- **Path is not absolute**: Make sure all file paths are absolute. The script automatically converts relative paths, but ensure your directory structure is correct.
+- **Element not clickable**: This usually happens when an overlay or modal is blocking the element. The script waits for the overlay to disappear, but if issues persist, adjust the waiting times (`time.sleep()`) or use `WebDriverWait`.
+- **Matching ChromeDriver**: Ensure your ChromeDriver version matches your installed Chrome version. If the versions mismatch, download the correct version from [here](https://sites.google.com/a/chromium.org/chromedriver/downloads).
 
 ## License
 
-This project is licensed under the MIT License.
+This project is open-source and free to use under the MIT License.
