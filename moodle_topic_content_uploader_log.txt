@@ -240,3 +240,17 @@ Stacktrace:
 2024-10-05 16:12:13,954 - INFO - Clicked 'Upload this file' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
 2024-10-05 16:12:16,460 - INFO - Saved folder and returned to course on course: https://moodle.nu.edu.eg/course/view.php?id=11784
 2024-10-05 16:12:23,625 - INFO - Browser closed. Script completed.
+2024-10-05 16:20:38,190 - INFO - Content files found: ['HW Presentation Topics.pdf']
+2024-10-05 16:20:57,028 - INFO - User logged in manually.
+2024-10-05 16:21:00,800 - INFO - Enabled edit mode on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:21:01,757 - INFO - Clicked 'Add section' button on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:21:04,802 - INFO - Clicked 'Edit section name' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:21:07,263 - INFO - Renamed last section to 'Week1' using pyautogui on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:21:07,316 - INFO - Clicked 'Add an activity or resource' on the last section of course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:21:17,550 - INFO - Clicked 'Add Folder' option on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:21:17,641 - INFO - Entered folder name 'Tutorial Content' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:21:18,776 - INFO - Clicked 'Add...' button to upload files on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:21:19,313 - INFO - Uploaded content: E:\GitHub Repos\moodle_multi_annoucement_make\section\content\HW Presentation Topics.pdf
+2024-10-05 16:21:19,381 - INFO - Clicked 'Upload this file' on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:21:21,553 - INFO - Saved folder and returned to course on course: https://moodle.nu.edu.eg/course/view.php?id=11784
+2024-10-05 16:21:28,663 - INFO - Browser closed. Script completed.

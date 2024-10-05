@@ -1,5 +1,0 @@
-Dear Students,
-I hope this email finds you well. This is a reminder that during next week’s lab, you will each be presenting a presentation about any hardware component of your choice, as informed in the tutorials. However, you will find a list of ideas attached to this email and uploaded on moodle to choose from.
-Please note that during next week’s lab, each student is required to get any means of presenting their presentation, either by getting their laptop to present or having their presentation on a USB.
-Best regards,
-CSCI101/CBIO101/CSC111 Team
