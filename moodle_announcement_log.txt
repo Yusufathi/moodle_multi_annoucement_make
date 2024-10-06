@@ -388,3 +388,194 @@ Stacktrace:
 2024-10-05 13:20:37,484 - INFO - Submitted the form on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=166443
 2024-10-05 13:20:42,486 - INFO - Announcement posted successfully on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=166443
 2024-10-05 13:20:44,676 - INFO - Browser closed. Script completed.
+2024-10-06 12:27:02,899 - INFO - Attachments found: ['CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf', 'Freshman Guidance Tips \U0001f60a.pdf', 'How to Choose Your Laptop for CS Students.pdf', 'HW Presentation Topics.pdf']
+2024-10-06 12:27:44,773 - INFO - User logged in manually.
+2024-10-06 12:27:54,785 - INFO - Clicked 'Add discussion topic' on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-10-06 12:27:57,877 - INFO - Entered subject on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-10-06 12:27:58,737 - INFO - Entered message on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-10-06 12:27:59,838 - INFO - Clicked the 'Advanced' button.
+2024-10-06 12:28:02,917 - INFO - Clicked the 'Add file' button.
+2024-10-06 12:28:04,948 - INFO - Selected file: E:\GitHub Repos\moodle_multi_annoucement_make\input\attachments\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-06 12:28:04,993 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\input\attachments\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-06 12:28:11,052 - ERROR - Failed to upload attachment: E:\GitHub Repos\moodle_multi_annoucement_make\input\attachments\Freshman Guidance Tips \U0001f60a.pdf - Error: Message: element click intercepted: Element <i class="icon fa fa-file-o fa-fw " aria-hidden="true" id="yui_3_18_1_1_1728206879851_998"></i> is not clickable at point (635, 507). Other element would receive the click: <i class="icon fa fa-download fa-fw " aria-hidden="true"></i>
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7827CB125+29573]
+	(No symbol) [0x00007FF78273FF50]
+	(No symbol) [0x00007FF7825FB6EA]
+	(No symbol) [0x00007FF7826574EE]
+	(No symbol) [0x00007FF782654F3C]
+	(No symbol) [0x00007FF782652408]
+	(No symbol) [0x00007FF78265161A]
+	(No symbol) [0x00007FF7826436BE]
+	(No symbol) [0x00007FF7826772FA]
+	(No symbol) [0x00007FF782642FF6]
+	(No symbol) [0x00007FF782677510]
+	(No symbol) [0x00007FF7826986BC]
+	(No symbol) [0x00007FF7826770A3]
+	(No symbol) [0x00007FF7826412DF]
+	(No symbol) [0x00007FF782642441]
+	GetHandleVerifier [0x00007FF782AFC76D+3377613]
+	GetHandleVerifier [0x00007FF782B47B67+3685831]
+	GetHandleVerifier [0x00007FF782B3CF8B+3641835]
+	GetHandleVerifier [0x00007FF78288B2A6+816390]
+	(No symbol) [0x00007FF78274B25F]
+	(No symbol) [0x00007FF782747084]
+	(No symbol) [0x00007FF782747220]
+	(No symbol) [0x00007FF78273607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-06 12:28:11,070 - ERROR - Failed to upload attachment: E:\GitHub Repos\moodle_multi_annoucement_make\input\attachments\How to Choose Your Laptop for CS Students.pdf - Error: Message: element not interactable
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7827CB125+29573]
+	(No symbol) [0x00007FF78273FF50]
+	(No symbol) [0x00007FF7825FB519]
+	(No symbol) [0x00007FF782650C8F]
+	(No symbol) [0x00007FF7826436BE]
+	(No symbol) [0x00007FF7826772FA]
+	(No symbol) [0x00007FF782642FF6]
+	(No symbol) [0x00007FF782677510]
+	(No symbol) [0x00007FF7826986BC]
+	(No symbol) [0x00007FF7826770A3]
+	(No symbol) [0x00007FF7826412DF]
+	(No symbol) [0x00007FF782642441]
+	GetHandleVerifier [0x00007FF782AFC76D+3377613]
+	GetHandleVerifier [0x00007FF782B47B67+3685831]
+	GetHandleVerifier [0x00007FF782B3CF8B+3641835]
+	GetHandleVerifier [0x00007FF78288B2A6+816390]
+	(No symbol) [0x00007FF78274B25F]
+	(No symbol) [0x00007FF782747084]
+	(No symbol) [0x00007FF782747220]
+	(No symbol) [0x00007FF78273607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-06 12:28:11,084 - ERROR - Failed to upload attachment: E:\GitHub Repos\moodle_multi_annoucement_make\input\attachments\HW Presentation Topics.pdf - Error: Message: element not interactable
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7827CB125+29573]
+	(No symbol) [0x00007FF78273FF50]
+	(No symbol) [0x00007FF7825FB519]
+	(No symbol) [0x00007FF782650C8F]
+	(No symbol) [0x00007FF7826436BE]
+	(No symbol) [0x00007FF7826772FA]
+	(No symbol) [0x00007FF782642FF6]
+	(No symbol) [0x00007FF782677510]
+	(No symbol) [0x00007FF7826986BC]
+	(No symbol) [0x00007FF7826770A3]
+	(No symbol) [0x00007FF7826412DF]
+	(No symbol) [0x00007FF782642441]
+	GetHandleVerifier [0x00007FF782AFC76D+3377613]
+	GetHandleVerifier [0x00007FF782B47B67+3685831]
+	GetHandleVerifier [0x00007FF782B3CF8B+3641835]
+	GetHandleVerifier [0x00007FF78288B2A6+816390]
+	(No symbol) [0x00007FF78274B25F]
+	(No symbol) [0x00007FF782747084]
+	(No symbol) [0x00007FF782747220]
+	(No symbol) [0x00007FF78273607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-06 12:28:15,135 - INFO - Submitted the form on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-10-06 12:28:17,279 - INFO - Browser closed. Script completed.
+2024-10-06 12:30:10,853 - INFO - Attachments found: ['CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf', 'Freshman Guidance Tips \U0001f60a.pdf', 'How to Choose Your Laptop for CS Students.pdf', 'HW Presentation Topics.pdf']
+2024-10-06 12:30:41,604 - INFO - User logged in manually.
+2024-10-06 12:30:52,660 - INFO - Clicked 'Add discussion topic' on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-10-06 12:30:55,773 - INFO - Entered subject on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-10-06 12:30:56,769 - INFO - Entered message on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-10-06 12:30:57,423 - INFO - Clicked the 'Advanced' button.
+2024-10-06 12:31:00,506 - INFO - Clicked the 'Add file' button.
+2024-10-06 12:31:02,534 - INFO - Selected file: E:\GitHub Repos\moodle_multi_annoucement_make\input\attachments\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-06 12:31:02,587 - INFO - Clicked 'Upload this file' for E:\GitHub Repos\moodle_multi_annoucement_make\input\attachments\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-06 12:31:02,596 - INFO - File upload finished: E:\GitHub Repos\moodle_multi_annoucement_make\input\attachments\CSCI101 - Tutorial 1 Hardware and Presentation Skills.pdf
+2024-10-06 12:31:05,650 - ERROR - Failed to upload attachment: E:\GitHub Repos\moodle_multi_annoucement_make\input\attachments\Freshman Guidance Tips \U0001f60a.pdf - Error: Message: element click intercepted: Element <i class="icon fa fa-file-o fa-fw " aria-hidden="true" id="yui_3_18_1_1_1728207057435_999"></i> is not clickable at point (635, 407). Other element would receive the click: <a href="#" class="nav-link" tabindex="-1" aria-selected="false">...</a>
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7827CB125+29573]
+	(No symbol) [0x00007FF78273FF50]
+	(No symbol) [0x00007FF7825FB6EA]
+	(No symbol) [0x00007FF7826574EE]
+	(No symbol) [0x00007FF782654F3C]
+	(No symbol) [0x00007FF782652408]
+	(No symbol) [0x00007FF78265161A]
+	(No symbol) [0x00007FF7826436BE]
+	(No symbol) [0x00007FF7826772FA]
+	(No symbol) [0x00007FF782642FF6]
+	(No symbol) [0x00007FF782677510]
+	(No symbol) [0x00007FF7826986BC]
+	(No symbol) [0x00007FF7826770A3]
+	(No symbol) [0x00007FF7826412DF]
+	(No symbol) [0x00007FF782642441]
+	GetHandleVerifier [0x00007FF782AFC76D+3377613]
+	GetHandleVerifier [0x00007FF782B47B67+3685831]
+	GetHandleVerifier [0x00007FF782B3CF8B+3641835]
+	GetHandleVerifier [0x00007FF78288B2A6+816390]
+	(No symbol) [0x00007FF78274B25F]
+	(No symbol) [0x00007FF782747084]
+	(No symbol) [0x00007FF782747220]
+	(No symbol) [0x00007FF78273607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-06 12:31:06,688 - ERROR - Failed to upload attachment: E:\GitHub Repos\moodle_multi_annoucement_make\input\attachments\How to Choose Your Laptop for CS Students.pdf - Error: Message: element click intercepted: Element <i class="icon fa fa-file-o fa-fw " aria-hidden="true" id="yui_3_18_1_1_1728207057435_999"></i> is not clickable at point (635, 407). Other element would receive the click: <a href="#" class="nav-link" tabindex="-1" aria-selected="false">...</a>
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7827CB125+29573]
+	(No symbol) [0x00007FF78273FF50]
+	(No symbol) [0x00007FF7825FB6EA]
+	(No symbol) [0x00007FF7826574EE]
+	(No symbol) [0x00007FF782654F3C]
+	(No symbol) [0x00007FF782652408]
+	(No symbol) [0x00007FF78265161A]
+	(No symbol) [0x00007FF7826436BE]
+	(No symbol) [0x00007FF7826772FA]
+	(No symbol) [0x00007FF782642FF6]
+	(No symbol) [0x00007FF782677510]
+	(No symbol) [0x00007FF7826986BC]
+	(No symbol) [0x00007FF7826770A3]
+	(No symbol) [0x00007FF7826412DF]
+	(No symbol) [0x00007FF782642441]
+	GetHandleVerifier [0x00007FF782AFC76D+3377613]
+	GetHandleVerifier [0x00007FF782B47B67+3685831]
+	GetHandleVerifier [0x00007FF782B3CF8B+3641835]
+	GetHandleVerifier [0x00007FF78288B2A6+816390]
+	(No symbol) [0x00007FF78274B25F]
+	(No symbol) [0x00007FF782747084]
+	(No symbol) [0x00007FF782747220]
+	(No symbol) [0x00007FF78273607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-06 12:31:07,748 - ERROR - Failed to upload attachment: E:\GitHub Repos\moodle_multi_annoucement_make\input\attachments\HW Presentation Topics.pdf - Error: Message: element click intercepted: Element <i class="icon fa fa-file-o fa-fw " aria-hidden="true" id="yui_3_18_1_1_1728207057435_999"></i> is not clickable at point (635, 407). Other element would receive the click: <a href="#" class="nav-link" tabindex="-1" aria-selected="false">...</a>
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7827CB125+29573]
+	(No symbol) [0x00007FF78273FF50]
+	(No symbol) [0x00007FF7825FB6EA]
+	(No symbol) [0x00007FF7826574EE]
+	(No symbol) [0x00007FF782654F3C]
+	(No symbol) [0x00007FF782652408]
+	(No symbol) [0x00007FF78265161A]
+	(No symbol) [0x00007FF7826436BE]
+	(No symbol) [0x00007FF7826772FA]
+	(No symbol) [0x00007FF782642FF6]
+	(No symbol) [0x00007FF782677510]
+	(No symbol) [0x00007FF7826986BC]
+	(No symbol) [0x00007FF7826770A3]
+	(No symbol) [0x00007FF7826412DF]
+	(No symbol) [0x00007FF782642441]
+	GetHandleVerifier [0x00007FF782AFC76D+3377613]
+	GetHandleVerifier [0x00007FF782B47B67+3685831]
+	GetHandleVerifier [0x00007FF782B3CF8B+3641835]
+	GetHandleVerifier [0x00007FF78288B2A6+816390]
+	(No symbol) [0x00007FF78274B25F]
+	(No symbol) [0x00007FF782747084]
+	(No symbol) [0x00007FF782747220]
+	(No symbol) [0x00007FF78273607F]
+	BaseThreadInitThunk [0x00007FFBDB797374+20]
+	RtlUserThreadStart [0x00007FFBDB95CC91+33]
+
+2024-10-06 12:31:12,933 - INFO - Submitted the form on forum: https://moodle.nu.edu.eg/mod/forum/view.php?id=157395
+2024-10-06 12:31:15,103 - INFO - Browser closed. Script completed.
