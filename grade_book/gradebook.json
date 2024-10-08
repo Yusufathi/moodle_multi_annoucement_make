@@ -1,0 +1,44 @@
+{
+    "Lectures": 5,
+    "Tutorials": {
+        "weight": 15,
+        "Week1": 10,
+        "Week2": 10,
+        "Week3": 10,
+        "Week4": 10,
+        "Week5": 10,
+        "Week7": 10,
+        "Week8": 10,
+        "Week9": 10,
+        "Week10": 10
+    },
+    "Labs": {
+        "weight": 15,
+        "Week2": 10,
+        "Week3": 10,
+        "Week4": 10,
+        "Week5": 10,
+        "Week6": 10,
+        "Week8": 10,
+        "Week9": 11,
+        "Week10": 12,
+        "Week11": 5
+    },
+    "Projects": {
+        "weight": 30,
+        "project1_support": 2.5,
+        "project1_discussion": 10,
+        "project1_bonus": 2.5,
+        "project2_support": 2.5,
+        "project2_discussion": 10,
+        "project2_bonus": 2.5
+    },
+    "Quizes": {
+        "weight": 5,
+        "quiz1": 10,
+        "quiz2": 10,
+        "quiz3": 10
+    },
+    "Midterm": 10,
+    "Final": 25
+}
