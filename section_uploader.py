@@ -9,7 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 # Set up logging
-logging.basicConfig(filename="moodle_topic_content_uploader_log.txt", level=logging.INFO,
+logging.basicConfig(filename="logs/moodle_topic_content_uploader_log.txt", level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Path to Chromedriver
@@ -276,7 +276,7 @@ def process_course(driver, course_url, create_new_section, folder_name, content_
 
 def main():
     """Main function to execute the script."""
-    CREATE_NEW_SECTION = False  # Set this to True if you want to create a new section
+    CREATE_NEW_SECTION = True  # Set this to True if you want to create a new section
 
     # File paths
     course_links_file = "section/links.txt"

@@ -1,3 +1,4 @@
+#CSCI101
 https://moodle.nu.edu.eg/course/view.php?id=12055
 https://moodle.nu.edu.eg/course/view.php?id=12059
 https://moodle.nu.edu.eg/course/view.php?id=13118
@@ -6,6 +7,12 @@ https://moodle.nu.edu.eg/course/view.php?id=13120
 https://moodle.nu.edu.eg/course/view.php?id=13121
 https://moodle.nu.edu.eg/course/view.php?id=13122
 https://moodle.nu.edu.eg/course/view.php?id=13123
+#CBIO101
 https://moodle.nu.edu.eg/course/view.php?id=13052
-https://moodle.nu.edu.eg/course/view.php?id=13053
-https://moodle.nu.edu.eg/course/view.php?id=13054
+#CSC111
+https://moodle.nu.edu.eg/course/view.php?id=13235
+https://moodle.nu.edu.eg/course/view.php?id=13236
+https://moodle.nu.edu.eg/course/view.php?id=13237
+https://moodle.nu.edu.eg/course/view.php?id=13238
+https://moodle.nu.edu.eg/course/view.php?id=13239
+https://moodle.nu.edu.eg/course/view.php?id=13240

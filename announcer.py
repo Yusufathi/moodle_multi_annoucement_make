@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 # Set up logging
-logging.basicConfig(filename="moodle_announcement_log.txt", level=logging.INFO,
+logging.basicConfig(filename="logs/moodle_announcement_log.txt", level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 CHROMEDRIVER_PATH = os.path.join(os.getcwd(), 'chromedriver.exe')
