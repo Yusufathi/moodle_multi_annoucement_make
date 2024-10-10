@@ -8,15 +8,12 @@ import time
 import os
 import json
 
-# Set up logging in the logs/ folder
 LOGS_PATH = os.path.join(os.getcwd(), 'logs')
 os.makedirs(LOGS_PATH, exist_ok=True)
 logging.basicConfig(filename=os.path.join(LOGS_PATH, "grade_book_setup_log.txt"), level=logging.INFO,
                     format='%(asctime)s - %(message)s')
 
 CHROMEDRIVER_PATH = os.path.join(os.getcwd(), 'chromedriver.exe')
-
-# Function to read file content
 
 
 def read_lines(file_path):
@@ -26,8 +23,6 @@ def read_lines(file_path):
     except FileNotFoundError:
         logging.error(f"File '{file_path}' not found.")
         return []
-
-# Function to read gradebook JSON structure
 
 
 def read_json(file_path):
@@ -41,15 +36,11 @@ def read_json(file_path):
         logging.error(f"Error parsing JSON file '{file_path}' - {e}")
         return {}
 
-# Function to click an element using JavaScript (for safety)
-
 
 def js_click(driver, element):
     driver.execute_script("arguments[0].scrollIntoView(true);", element)
     time.sleep(1)
     driver.execute_script("arguments[0].click();", element)
-
-# Function to navigate to 'Gradebook setup'
 
 
 def click_gradebook_setup(driver, course_url):
@@ -70,8 +61,6 @@ def click_gradebook_setup(driver, course_url):
         print(f"Failed to click 'Gradebook setup' for course: {
               course_url} - Error: {e}")
         return False
-
-# Function to detect recalculation page and click 'Continue'
 
 
 def handle_recalculation_page(driver):
@@ -100,8 +89,6 @@ def handle_recalculation_page(driver):
     except Exception as e:
         print(f"No recalculation page detected or failed to handle it: {e}")
 
-# Function to navigate and setup the gradebook
-
 
 def navigate_to_gradebook_setup(driver, course_url):
     try:
@@ -127,8 +114,6 @@ def navigate_to_gradebook_setup(driver, course_url):
         print(f"Failed to navigate to Gradebook Setup for course: {
               course_url} - Error: {e}")
         return False
-
-# Function to create grade categories
 
 
 def create_category(driver, category_name, weight, course_url):
@@ -177,8 +162,6 @@ def create_category(driver, category_name, weight, course_url):
                       category_name}' for course: {course_url} - Error: {e}")
         print(f"Failed to create category '{
               category_name}' for course: {course_url} - Error: {e}")
-
-# Function to create grade items within categories
 
 
 def create_grade_item(driver, item_name, item_grade, category_name, course_url):
@@ -235,8 +218,6 @@ def create_grade_item(driver, item_name, item_grade, category_name, course_url):
                       item_name}' for course: {course_url} - Error: {e}")
         print(f"Failed to create grade item '{
               item_name}' for course: {course_url} - Error: {e}")
-
-# Main function
 
 
 def main():
