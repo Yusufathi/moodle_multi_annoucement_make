@@ -52,42 +52,49 @@ def click_gradebook_setup(driver, course_url):
         js_click(driver, gradebook_setup_option)
         logging.info(
             f"Clicked 'Gradebook setup' using JavaScript for course: {course_url}")
-        print(f"Clicked 'Gradebook setup' using JavaScript for course: {
-              course_url}")
+        print(
+            f"Clicked 'Gradebook setup' using JavaScript for course: {course_url}")
         return True
     except Exception as e:
-        logging.error(f"Failed to click 'Gradebook setup' for course: {
-                      course_url} - Error: {e}")
-        print(f"Failed to click 'Gradebook setup' for course: {
-              course_url} - Error: {e}")
+        logging.error(
+            f"Failed to click 'Gradebook setup' for course: {course_url} - Error: {e}")
+        print(
+            f"Failed to click 'Gradebook setup' for course: {course_url} - Error: {e}")
         return False
 
 
 def handle_recalculation_page(driver):
     try:
-        # Check if the recalculation page is detected
         recalculation_text = "Recalculating"
         WebDriverWait(driver, 5).until(
             EC.text_to_be_present_in_element(
                 (By.TAG_NAME, "body"), recalculation_text)
         )
         print("Detected recalculation page. Waiting for recalculation to complete.")
-
-        # Wait for 'Continue' button to appear
         continue_button = WebDriverWait(driver, 20).until(
             EC.element_to_be_clickable(
                 (By.XPATH, "//button[contains(text(), 'Continue')]"))
         )
         js_click(driver, continue_button)
         print("Clicked 'Continue' on recalculation page.")
-
-        # Wait for the page to return to the grade setup page
         WebDriverWait(driver, 20).until(
             EC.url_contains('grade/edit/tree/index.php')
         )
         print("Recalculation completed and returned to grade setup.")
     except Exception as e:
         print(f"No recalculation page detected or failed to handle it: {e}")
+
+
+def category_exists(driver, category_name):
+    try:
+        # Check if the category exists on the page
+        category_elements = driver.find_elements(
+            By.XPATH, f"//option[text()='{category_name}']")
+        return len(category_elements) > 0
+    except Exception as e:
+        print(
+            f"Failed to check for existing category '{category_name}' - Error: {e}")
+        return False
 
 
 def navigate_to_gradebook_setup(driver, course_url):
@@ -109,14 +116,18 @@ def navigate_to_gradebook_setup(driver, course_url):
 
         return click_gradebook_setup(driver, course_url)
     except Exception as e:
-        logging.error(f"Failed to navigate to Gradebook Setup for course: {
-                      course_url} - Error: {e}")
-        print(f"Failed to navigate to Gradebook Setup for course: {
-              course_url} - Error: {e}")
+        logging.error(
+            f"Failed to navigate to Gradebook Setup for course: {course_url} - Error: {e}")
+        print(
+            f"Failed to navigate to Gradebook Setup for course: {course_url} - Error: {e}")
         return False
 
 
 def create_category(driver, category_name, weight, course_url):
+    if category_exists(driver, category_name):
+        print(f"Category '{category_name}' already exists. Skipping creation.")
+        return
+
     try:
         print(f"Creating category: {category_name} with weight: {weight}")
         add_menu_button = WebDriverWait(driver, 10).until(
@@ -150,24 +161,28 @@ def create_category(driver, category_name, weight, course_url):
         )
         js_click(driver, save_button)
 
-        logging.info(f"Saved category '{
-                     category_name}' with weight '{weight}'")
+        logging.info(
+            f"Saved category '{category_name}' with weight '{weight}'")
         print(f"Saved category '{category_name}' with weight '{weight}'")
 
-        # Handle recalculation if it happens
         handle_recalculation_page(driver)
 
     except Exception as e:
-        logging.error(f"Failed to create category '{
-                      category_name}' for course: {course_url} - Error: {e}")
-        print(f"Failed to create category '{
-              category_name}' for course: {course_url} - Error: {e}")
+        logging.error(
+            f"Failed to create category '{category_name}' for course: {course_url} - Error: {e}")
+        print(
+            f"Failed to create category '{category_name}' for course: {course_url} - Error: {e}")
 
 
 def create_grade_item(driver, item_name, item_grade, category_name, course_url):
+    if category_name and not category_exists(driver, category_name):
+        print(
+            f"Category '{category_name}' does not exist. Skipping grade item creation for '{item_name}'.")
+        return
+
     try:
-        print(f"Creating grade item: {item_name} with grade: {
-              item_grade} in category: {category_name or 'None'}")
+        print(
+            f"Creating grade item: {item_name} with grade: {item_grade} in category: {category_name or 'None'}")
         add_menu_button = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable(
                 (By.XPATH, "//a[contains(@id, 'action-menu-toggle')]"))
@@ -206,18 +221,18 @@ def create_grade_item(driver, item_name, item_grade, category_name, course_url):
         )
         js_click(driver, save_button)
 
-        logging.info(f"Created grade item '{item_name}' with grade '{
-                     item_grade}' in category '{category_name}'")
-        print(f"Created grade item '{item_name}' with grade '{
-              item_grade}' in category '{category_name}'")
+        logging.info(
+            f"Created grade item '{item_name}' with grade '{item_grade}' in category '{category_name}'")
+        print(
+            f"Created grade item '{item_name}' with grade '{item_grade}' in category '{category_name}'")
 
         handle_recalculation_page(driver)
 
     except Exception as e:
-        logging.error(f"Failed to create grade item '{
-                      item_name}' for course: {course_url} - Error: {e}")
-        print(f"Failed to create grade item '{
-              item_name}' for course: {course_url} - Error: {e}")
+        logging.error(
+            f"Failed to create grade item '{item_name}' for course: {course_url} - Error: {e}")
+        print(
+            f"Failed to create grade item '{item_name}' for course: {course_url} - Error: {e}")
 
 
 def main():
