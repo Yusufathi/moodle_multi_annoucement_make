@@ -84,30 +84,25 @@ def navigate_to_gradebook_setup(driver, course_url):
 def delete_item_or_category(driver):
     try:
         while True:
+            # Fetch all action buttons
             action_buttons = WebDriverWait(driver, 10).until(
                 EC.presence_of_all_elements_located(
                     (By.CSS_SELECTOR, "button.btn-icon.cellmenubtn"))
             )
 
-            # Skip the first button (representing the whole course)
-            if len(action_buttons) > 1:
-                # Re-fetch the action buttons after each deletion
-                action_buttons = WebDriverWait(driver, 10).until(
-                    EC.presence_of_all_elements_located(
-                        (By.CSS_SELECTOR, "button.btn-icon.cellmenubtn"))
-                )
-
-                # Click the action button for each item
-                for button_index in range(1, len(action_buttons)):
+            # Skip the first button (representing the whole course) and the last button (Course Total)
+            if len(action_buttons) > 2:
+                for button_index in range(1, len(action_buttons) - 1):
                     try:
+                        # Re-fetch action buttons after each deletion
                         action_buttons = WebDriverWait(driver, 10).until(
                             EC.presence_of_all_elements_located(
                                 (By.CSS_SELECTOR, "button.btn-icon.cellmenubtn"))
                         )
 
                         js_click(driver, action_buttons[button_index])
-                        logging.info("Clicked action button.")
-                        print("Clicked action button.")
+                        logging.info(f"Clicked action button {button_index}.")
+                        print(f"Clicked action button {button_index}.")
                         time.sleep(1)
 
                         # Look for any delete button in the dropdown and click it
@@ -117,8 +112,8 @@ def delete_item_or_category(driver):
                         )
                         js_click(driver, delete_option)
                         logging.info(
-                            "Clicked 'Delete' option from the dropdown.")
-                        print("Clicked 'Delete' option from the dropdown.")
+                            f"Clicked 'Delete' option from the dropdown.")
+                        print(f"Clicked 'Delete' option from the dropdown.")
                         time.sleep(1)
 
                         # Confirm deletion in the dialog
@@ -131,7 +126,6 @@ def delete_item_or_category(driver):
                         print("Confirmed deletion.")
                         time.sleep(5)  # Wait for the page to refresh
 
-                        # Re-fetch the elements after page refresh and continue
                         logging.info(
                             "Item or category deleted. Refreshing the page.")
                         print("Item or category deleted. Refreshing the page.")
@@ -145,10 +139,23 @@ def delete_item_or_category(driver):
                         continue
 
             else:
-                # If only the course action is left (first button), stop deleting
-                logging.info("No more items or categories to delete.")
-                print("No more items or categories to delete.")
-                break
+                # Check if only the "Course total" remains (or nothing more to delete)
+                try:
+                    course_total = WebDriverWait(driver, 5).until(
+                        EC.presence_of_element_located(
+                            (By.XPATH, "//span[contains(text(), 'Course total')]"))
+                    )
+                    if course_total:
+                        logging.info(
+                            "Only 'Course total' remains. No more items or categories to delete.")
+                        print(
+                            "Only 'Course total' remains. No more items or categories to delete.")
+                        break
+
+                except Exception as e:
+                    logging.error(f"Error checking for 'Course total' - {e}")
+                    print(f"Error checking for 'Course total' - {e}")
+                    break
 
     except Exception as e:
         logging.error(f"Failed to retrieve action buttons - Error: {e}")
