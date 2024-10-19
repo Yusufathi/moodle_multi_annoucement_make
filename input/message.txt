@@ -1,5 +1,11 @@
 Dear Students,
-I hope this email finds you well. This is a reminder that during next week’s lab, you will each be presenting a presentation about any hardware component of your choice, as informed in the tutorials. However, you will find a list of ideas attached to this email and uploaded on moodle to choose from.
-Please note that during next week’s lab, each student is required to get any means of presenting their presentation, either by getting their laptop to present or having their presentation on a USB.
+
+As requested by you, here are the links to the videos for Tutorial 1 and Tutorial 2. These videos might help you in your preparation for the upcoming quiz:
+    Tutorial 1: https://nileuniversity-my.sharepoint.com/:v:/g/personal/yismail_nu_edu_eg/EWK0QVYHg2tPpxxAAgCa-4wBe2FIqymWw19M08asl8vtUw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NyA83m
+    Tutorial 2: https://nileuniversity-my.sharepoint.com/personal/yismail_nu_edu_eg/_layouts/15/stream.aspx?id=%2Fpersonal%2Fyismail%5Fnu%5Fedu%5Feg%2FDocuments%2F1Teaching%2FCSCI101%20Fall24%2FContent%2FTutorial%2FWeek2%2FTutorial%202%20Final%20Edit%20%2D%20Made%20with%20Clipchamp%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E42a7b58b%2D2544%2D41da%2Dab71%2Db076e68a3d35
+Please review them if needed as they cover important concepts that will be useful for the quiz.
+
+Good luck with your studies!
+
 Best regards,
-CSCI101/CBIO101/CSC111 Team
+Yusuf Fathi

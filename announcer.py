@@ -95,23 +95,32 @@ def post_announcement(driver, forum_url, subject, message, attachments):
             f"Failed to find the message input on forum: {forum_url} - Error: {e}")
         return
 
-    # Handle attachments (if any)
+    # Handle attachments(if any)
     if attachments:
         upload_attachments(driver, attachments)
 
-    # Submit the form
+    # Scroll to the submit button and ensure it's clickable
     try:
-        WebDriverWait(driver, 10).until(EC.invisibility_of_element(
-            (By.CSS_SELECTOR, 'div.yui3-widget-mask')))
-        driver.execute_script(
-            "window.scrollTo(0, document.body.scrollHeight);")
-        time.sleep(2)
+        # Scroll the page to the submit button
         submit_button = driver.find_element(By.ID, "id_submitbutton")
-        submit_button.click()
+        driver.execute_script(
+            "arguments[0].scrollIntoView(true);", submit_button)
+        time.sleep(2)  # Let the scroll action take effect
+
+        # Ensure no modal or overlay is blocking the click
+        WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.ID, "id_submitbutton"))
+        )
+
+        # Use JavaScript to click the submit button if regular click fails
+        driver.execute_script("arguments[0].click();", submit_button)
         logging.info(f"Submitted the form on forum: {forum_url}")
+        print(f"Submitted the form on forum: {forum_url}")
+
     except Exception as e:
         logging.error(
             f"Failed to submit the form on forum: {forum_url} - Error: {e}")
+        print(f"Failed to submit the form on forum: {forum_url} - Error: {e}")
 
 
 def upload_attachments(driver, attachments):
