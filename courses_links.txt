@@ -16,6 +16,7 @@ https://moodle.nu.edu.eg/course/view.php?id=13237
 https://moodle.nu.edu.eg/course/view.php?id=13238
 https://moodle.nu.edu.eg/course/view.php?id=13239
 https://moodle.nu.edu.eg/course/view.php?id=13240
+https://moodle.nu.edu.eg/course/view.php?id=13372
 
 
 #Grade books
@@ -34,6 +35,7 @@ https://moodle.nu.edu.eg/grade/edit/tree/index.php?id=13237
 https://moodle.nu.edu.eg/grade/edit/tree/index.php?id=13238
 https://moodle.nu.edu.eg/grade/edit/tree/index.php?id=13239
 https://moodle.nu.edu.eg/grade/edit/tree/index.php?id=13240
+https://moodle.nu.edu.eg/grade/edit/tree/index.php?id=13372
 
 
 
@@ -54,3 +56,4 @@ https://moodle.nu.edu.eg/mod/forum/view.php?id=170731
 https://moodle.nu.edu.eg/mod/forum/view.php?id=170732
 https://moodle.nu.edu.eg/mod/forum/view.php?id=170733
 https://moodle.nu.edu.eg/mod/forum/view.php?id=170734
+https://moodle.nu.edu.eg/mod/forum/view.php?id=175885
