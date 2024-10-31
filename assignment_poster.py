@@ -1,161 +1,250 @@
 import logging
 import os
-import json
 import time
+import json
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-# Setup logging
-LOGS_PATH = os.path.join(os.getcwd(), 'logs')
-os.makedirs(LOGS_PATH, exist_ok=True)
-logging.basicConfig(filename=os.path.join(LOGS_PATH, "assignment_poster_log.txt"), level=logging.INFO,
-                    format='%(asctime)s - %(message)s')
+logging.basicConfig(filename="logs/assignment_poster_log.txt", level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 CHROMEDRIVER_PATH = os.path.join(os.getcwd(), 'chromedriver.exe')
 
+# Helper functions
+
 
 def read_json(file_path):
+    """Reads and parses JSON configuration file."""
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
             return json.load(file)
     except FileNotFoundError:
-        logging.error(f"File '{file_path}' not found.")
+        logging.error(f"Configuration file '{file_path}' not found.")
         return {}
     except json.JSONDecodeError as e:
         logging.error(f"Error parsing JSON file '{file_path}' - {e}")
         return {}
 
 
-def log_in_to_moodle(driver):
-    """Logs in to Moodle using credentials from creds.txt."""
+def get_attachments(attachments_dir):
+    """Returns a list of attachments from a directory."""
     try:
-        with open("creds.txt", 'r') as file:
-            username, password = file.read().splitlines()
+        files = os.listdir(attachments_dir)
+        if not files:
+            logging.info("No attachments found. Skipping attachments.")
+            return []
+        logging.info(f"Attachments found: {files}")
+        return [os.path.abspath(os.path.join(attachments_dir, f)) for f in files]
+    except FileNotFoundError:
+        logging.error(f"Attachments folder '{attachments_dir}' not found.")
+        return []
 
+
+def js_click(driver, element):
+    driver.execute_script("arguments[0].scrollIntoView(true);", element)
+    time.sleep(1)
+    driver.execute_script("arguments[0].click();", element)
+
+
+def auto_login(driver, email, password):
+    """Logs into Moodle using SSO with email and password."""
+    try:
         driver.get("https://moodle.nu.edu.eg/")
-        time.sleep(2)
-
-        username_input = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.ID, "username"))
-        )
-        password_input = driver.find_element(By.ID, "password")
-
-        username_input.send_keys(username)
-        password_input.send_keys(password)
-        driver.find_element(By.ID, "loginbtn").click()
-
-        logging.info("Login successful.")
         time.sleep(3)
-    except Exception as e:
-        logging.error(f"Login failed - Error: {e}")
-        return False
 
-    return True
+        email_input = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "i0116"))
+        )
+        email_input.clear()
+        email_input.send_keys(email)
+        next_button = driver.find_element(By.ID, "idSIButton9")
+        js_click(driver, next_button)
+        logging.info("Entered email and clicked next for SSO.")
+
+        retries = 3
+        for attempt in range(retries):
+            try:
+                password_input = WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located((By.ID, "i0118"))
+                )
+                password_input.clear()
+                password_input.send_keys(password)
+                sign_in_button = driver.find_element(By.ID, "idSIButton9")
+                js_click(driver, sign_in_button)
+                logging.info("Entered password and clicked sign in for SSO.")
+                break
+            except Exception as e:
+                if attempt < retries - 1:
+                    logging.warning(
+                        f"Retry {attempt + 1} for password entry due to error: {e}")
+                    time.sleep(2)
+                else:
+                    raise e
+
+        stay_signed_in_button = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.ID, "idSIButton9"))
+        )
+        js_click(driver, stay_signed_in_button)
+        logging.info("Clicked 'Yes' for staying signed in.")
+
+        WebDriverWait(driver, 20).until(
+            EC.presence_of_element_located(
+                (By.XPATH, "//h2[contains(text(), 'Hi,')]"))
+        )
+        logging.info("Login successful.")
+        print("Login successful.")
+        return True
+    except Exception as e:
+        logging.error(f"Login process failed - Error: {e}")
+        print(f"Login process failed - Error: {e}")
+        return False
 
 
 def enable_editing_mode(driver):
-    """Enable course editing mode if not already enabled."""
+    """Enables editing mode if it is not already enabled."""
     try:
-        editing_switch = driver.find_element(By.CSS_SELECTOR, "input[name='setmode']")
-        if not editing_switch.is_selected():
-            editing_switch.click()
-            time.sleep(2)
-            logging.info("Editing mode enabled.")
+        # Check if the editing mode checkbox is already enabled
+        edit_mode_checkbox = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located(
+                (By.CSS_SELECTOR, "input[name='setmode']"))
+        )
+
+        # Check if the checkbox is already checked
+        if not edit_mode_checkbox.is_selected():
+            # Use JavaScript to click the checkbox
+            driver.execute_script("arguments[0].click();", edit_mode_checkbox)
+            logging.info("Edit mode enabled.")
+            print("Edit mode enabled.")
+            time.sleep(3)  # Give Moodle some time to apply the change
         else:
-            logging.info("Editing mode already enabled.")
+            logging.info("Edit mode is already enabled.")
+            print("Edit mode is already enabled.")
+
     except Exception as e:
-        logging.error(f"Failed to enable editing mode - Error: {e}")
+        logging.error(f"Failed to enable edit mode - Error: {e}")
+        print(f"Failed to enable edit mode - Error: {e}")
 
 
 def create_assignment(driver, config):
+    """Creates an assignment in the course with settings from config."""
     try:
-        # Click on the last "Add an activity or resource" button
-        add_buttons = driver.find_elements(By.CSS_SELECTOR, "button[data-action='open-chooser']")
-        if not add_buttons:
-            logging.error("No 'Add an activity or resource' button found.")
-            return
-
-        add_buttons[-1].click()
-        logging.info("Clicked 'Add an activity or resource'.")
-        time.sleep(2)
-
-        # Click on "Assignment"
-        assignment_button = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.CSS_SELECTOR, "a[title='Add a new Assignment']"))
+        add_button = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located(
+                (By.XPATH, "//button[@data-action='open-chooser']"))
         )
-        assignment_button.click()
-        logging.info("Selected 'Assignment' from the popup.")
-        time.sleep(3)
+        js_click(driver, add_button)
+        logging.info("Clicked 'Add an activity or resource'.")
 
-        # Fill in assignment details
-        driver.find_element(By.ID, "id_name").send_keys(config["assignment_name"])
-        driver.find_element(By.CSS_SELECTOR, "#id_introeditoreditable").send_keys(config["assignment_description"])
-        driver.find_element(By.CSS_SELECTOR, "#id_activityeditoreditable").send_keys(config["activity_instructions"])
+        assignment_button = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable(
+                (By.XPATH, "//a[contains(@title, 'Add a new Assignment')]"))
+        )
+        js_click(driver, assignment_button)
+        logging.info("Selected 'Assignment' from options.")
+
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "id_name"))
+        ).send_keys(config["assignment_name"])
+        logging.info("Entered assignment name.")
+
+        driver.find_element(By.ID, "id_introeditoreditable").send_keys(
+            config["assignment_description"])
+        logging.info("Entered assignment description.")
+
+        driver.find_element(By.ID, "id_activityeditoreditable").send_keys(
+            config["activity_instructions"])
+        logging.info("Entered activity instructions.")
+
+        upload_attachments(driver, get_attachments("assignments/attachments"))
 
         # Set due date
-        select_dropdown(driver, "id_duedate_day", str(config["due_day"]))
-        select_dropdown(driver, "id_duedate_month", config["due_month"])
-        select_dropdown(driver, "id_duedate_year", str(config["due_year"]))
-        select_dropdown(driver, "id_duedate_hour", str(config["due_hour"]))
-        select_dropdown(driver, "id_duedate_minute", str(config["due_minute"]))
+        select_option(driver, "id_duedate_day", str(config["due_day"]))
+        select_option(driver, "id_duedate_month", config["due_month"])
+        select_option(driver, "id_duedate_year", str(config["due_year"]))
+        select_option(driver, "id_duedate_hour", str(config["due_hour"]))
+        select_option(driver, "id_duedate_minute", str(config["due_minute"]))
 
         # Uncheck grading due date
-        uncheck_checkbox(driver, "id_gradingduedate_enabled")
+        grading_due_checkbox = driver.find_element(
+            By.ID, "id_gradingduedate_enabled")
+        if grading_due_checkbox.is_selected():
+            js_click(driver, grading_due_checkbox)
+            logging.info("Unchecked grading due date.")
 
-        # Set maximum number of files
-        select_dropdown(driver, "id_maxfiles", str(config["maximum_num_of_files"]))
+        # Set max number of files and file types
+        select_option(driver, "id_maxfiles", str(
+            config["maximum_num_of_files"]))
+        set_accepted_file_types(driver, config["accepted_file_types"])
 
-        # Choose accepted file types
-        choose_file_types(driver, config["accepted_file_types"])
-
-        # Submit the assignment
-        driver.find_element(By.ID, "id_submitbutton2").click()
-        logging.info("Assignment created and submitted.")
-
+        save_button = driver.find_element(By.ID, "id_submitbutton2")
+        js_click(driver, save_button)
+        logging.info("Saved and returned to course.")
     except Exception as e:
         logging.error(f"Failed to create assignment - Error: {e}")
 
 
-def select_dropdown(driver, dropdown_id, value):
+def upload_attachments(driver, attachments):
+    """Uploads attachments one by one."""
+    for attachment in attachments:
+        try:
+            add_file_button = driver.find_element(
+                By.CSS_SELECTOR, 'i.fa-file-o')
+            js_click(driver, add_file_button)
+            file_upload_element = driver.find_element(
+                By.CSS_SELECTOR, 'input[name="repo_upload_file"]')
+            file_upload_element.send_keys(attachment)
+            upload_button = driver.find_element(
+                By.CSS_SELECTOR, 'button.fp-upload-btn')
+            js_click(driver, upload_button)
+            WebDriverWait(driver, 30).until(
+                EC.invisibility_of_element(
+                    (By.CSS_SELECTOR, 'div.fp-uploadinprogress'))
+            )
+            logging.info(f"File upload finished: {attachment}")
+            time.sleep(2)
+        except Exception as e:
+            logging.error(f"Failed to upload attachment: {
+                          attachment} - Error: {e}")
+
+
+def select_option(driver, element_id, value_text):
+    """Selects an option by visible text."""
     try:
-        dropdown = driver.find_element(By.ID, dropdown_id)
-        dropdown.click()
-        option = dropdown.find_element(By.XPATH, f"//option[text()='{value}']")
-        option.click()
-        logging.info(f"Selected '{value}' from dropdown '{dropdown_id}'.")
+        select_element = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, element_id))
+        )
+        for option in select_element.find_elements(By.TAG_NAME, "option"):
+            if option.text == value_text:
+                option.click()
+                logging.info(f"Selected option '{
+                             value_text}' for element '{element_id}'.")
+                break
     except Exception as e:
-        logging.error(f"Failed to select '{value}' from dropdown '{dropdown_id}' - Error: {e}")
+        logging.error(f"Failed to select option '{
+                      value_text}' for element '{element_id}' - Error: {e}")
 
 
-def uncheck_checkbox(driver, checkbox_id):
+def set_accepted_file_types(driver, file_type):
+    """Sets the accepted file types for assignment submissions."""
     try:
-        checkbox = driver.find_element(By.ID, checkbox_id)
-        if checkbox.is_selected():
-            checkbox.click()
-            logging.info(f"Unchecked '{checkbox_id}'.")
-    except Exception as e:
-        logging.error(f"Failed to uncheck '{checkbox_id}' - Error: {e}")
-
-
-def choose_file_types(driver, file_type):
-    try:
-        choose_button = driver.find_element(By.ID, "yui_3_18_1_1_1730298020706_2565")
-        choose_button.click()
-        logging.info("Clicked 'Choose' button for file types.")
+        choose_button = driver.find_element(
+            By.CSS_SELECTOR, 'input[data-filetypeswidget="browsertrigger"]')
+        js_click(driver, choose_button)
         time.sleep(2)
-
-        # Find the file type by matching the config file
-        file_type_checkbox = driver.find_element(By.XPATH, f"//strong[text()='{file_type}']/../input")
+        file_type_checkbox = driver.find_element(
+            By.XPATH, f"//strong[text()='{file_type}']/preceding-sibling::input")
         if not file_type_checkbox.is_selected():
-            file_type_checkbox.click()
-            logging.info(f"Selected '{file_type}' as the accepted file type.")
-        driver.find_element(By.CSS_SELECTOR, "button[data-action='save']").click()
-        logging.info("Saved file type selection.")
+            js_click(driver, file_type_checkbox)
+        save_button = driver.find_element(
+            By.XPATH, "//button[@data-action='save']")
+        js_click(driver, save_button)
+        logging.info(f"Selected accepted file type: {file_type}")
     except Exception as e:
-        logging.error(f"Failed to choose file type '{file_type}' - Error: {e}")
+        logging.error(f"Failed to set accepted file type '{
+                      file_type}' - Error: {e}")
 
 
 def main():
@@ -165,11 +254,33 @@ def main():
         logging.error("No valid configuration found. Exiting script.")
         return
 
+    try:
+        # Read credentials from creds.txt in "key:value" format
+        with open('creds.txt', 'r') as creds_file:
+            creds = {}
+            for line in creds_file:
+                key, value = line.strip().split(':')
+                creds[key.strip()] = value.strip()
+            email = creds.get("email")
+            password = creds.get("password")
+
+            if not email or not password:
+                logging.error(
+                    "Email or password not found in creds.txt. Exiting script.")
+                return
+    except FileNotFoundError:
+        logging.error("creds.txt file not found. Exiting script.")
+        return
+    except ValueError:
+        logging.error(
+            "Invalid format in creds.txt. Each line should be in 'key:value' format. Exiting script.")
+        return
+
     service = Service(executable_path=CHROMEDRIVER_PATH)
     driver = webdriver.Chrome(service=service)
     driver.maximize_window()
 
-    if not log_in_to_moodle(driver):
+    if not auto_login(driver, email, password):
         logging.error("Exiting script due to failed login.")
         driver.quit()
         return
