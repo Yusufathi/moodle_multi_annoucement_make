@@ -1,0 +1,15 @@
+{
+    "courses": [
+        "https://moodle.nu.edu.eg/course/view.php?id=13053"
+    ],
+    "assignment_name": "Project 1 Submittion",
+    "assignment_description": "Project 1 Submittion",
+    "activity_instructions": "Project 1 Submittion",
+    "due_day": 5,
+    "due_month": "November",
+    "due_year": 2024,
+    "due_hour": 23,
+    "due_minute": 59,
+    "maximum_num_of_files": 1,
+    "accepted_file_types": "Archive files"
+}
