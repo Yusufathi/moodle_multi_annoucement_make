@@ -1,0 +1,26 @@
+{
+    "courses": [
+        "https://moodle.nu.edu.eg/grade/edit/tree/index.php?id=12059"
+    ],
+    "Tutorials": {
+        "Tutorial2": "Tut2 (Logic & Numbering Sys.)",
+        "Tutorial3": "Tut3 (Flowchart & Psedo & Web1)",
+        "Tutorial4": "Tut4 (Web2)",
+        "Tutorial5": "Tut5 (OS)",
+        "Tutorial7": "Tut6 (DB1)",
+        "Tutorial8": "Tut7 (DB2)",
+        "Tutorial9": "Tut8 (Networks)",
+        "Tutorial10": "Tut9 (Prompt Engineering)"
+    },
+    "Labs": {
+        "Lab2": "Lab1 Presenetation",
+        "Lab3": "Lab2 Logic Simulation",
+        "Lab4": "Lab3 Flowchart, Pseudocode, Web1",
+        "Lab5": "Lab4 Web2",
+        "Lab6": "Lab5 Linux, Git",
+        "Lab8": "Lab6 DB1",
+        "Lab9": "Lab7 DB2",
+        "Lab10": "Lab8 Packet Tracer",
+        "Lab11": "Lab9 GPT Tasks"
+    }
+}

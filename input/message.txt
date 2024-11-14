@@ -1,11 +1,24 @@
 Dear Students,
 
-As requested by you, here are the links to the videos for Tutorial 1 and Tutorial 2. These videos might help you in your preparation for the upcoming quiz:
-    Tutorial 1: https://nileuniversity-my.sharepoint.com/:v:/g/personal/yismail_nu_edu_eg/EWK0QVYHg2tPpxxAAgCa-4wBe2FIqymWw19M08asl8vtUw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NyA83m
-    Tutorial 2: https://nileuniversity-my.sharepoint.com/personal/yismail_nu_edu_eg/_layouts/15/stream.aspx?id=%2Fpersonal%2Fyismail%5Fnu%5Fedu%5Feg%2FDocuments%2F1Teaching%2FCSCI101%20Fall24%2FContent%2FTutorial%2FWeek2%2FTutorial%202%20Final%20Edit%20%2D%20Made%20with%20Clipchamp%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E42a7b58b%2D2544%2D41da%2Dab71%2Db076e68a3d35
-Please review them if needed as they cover important concepts that will be useful for the quiz.
+I hope this message finds you well.
 
-Good luck with your studies!
+Please be informed that the midterm exam will take place on Saturday, November 16th, from 8:30 AM to 9:29 AM. Each student is assigned a specific room for the exam; please refer to the attached PDF for your room assignment.
+
+Exam Guidelines :
+1.Calculators Are not Allowed.
+2.You must come to your exam on time. You will not be allowed to enter your exam after 15 minutes from the beginning of the exams.
+if you came late the time will not be compensated. 
+3.You cannot leave the exam before mid-time.
+4.No bathroom breaks are allowed except for emergencies.
+5.You must bring your NU ID, or you will not enter the exam.
+6.You must sign the attendance sheet given to you by the proctor or your attendance will not be considered.
+7.Mobile Phones are not allowed inside the hall.
+8.For online exams, you must open the exams from labs PCs.
+9.For online exams, you are not allowed to open any other website other than Moodle. If you did so, it will be considered a cheating case with its consequent consequences.
+
+
+Best of luck with your preparation, and we look forward to a smooth exam day.
 
 Best regards,
-Yusuf Fathi
+CSCI101 Team
+TA/RA at ITCS
