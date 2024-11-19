@@ -148,21 +148,32 @@ def retrieve_moodle_session_cookie(driver):
 
 
 def modify_grade_item_name(driver, old_name, new_name, category):
+    """
+    Modifies the grade item name by injecting a button and interacting with it.
+    Skips the item if it cannot be found.
+    """
     try:
-        print(f"Looking for grade item '{
-              old_name}' in category '{category}'...")
-        logging.info(f"Looking for grade item '{
-                     old_name}' in category '{category}'.")
+        print(
+            f"Looking for grade item '{old_name}' in category '{category}'...")
+        logging.info(
+            f"Looking for grade item '{old_name}' in category '{category}'.")
 
         # Locate the grade item row based on the old name and get the data-itemid attribute
-        item_row = driver.find_element(
-            By.XPATH, f"//span[@title='{old_name}']/ancestor::tr")
-        data_itemid = item_row.get_attribute("data-itemid")
+        try:
+            item_row = driver.find_element(
+                By.XPATH, f"//span[@title='{old_name}']/ancestor::tr")
+            data_itemid = item_row.get_attribute("data-itemid")
+        except Exception:
+            print(f"Grade item '{old_name}' not found. Skipping...")
+            logging.warning(
+                f"Grade item '{old_name}' not found in category '{category}'. Skipping...")
+            return False
 
         if not data_itemid:
-            print(f"Could not find data-itemid for grade item '{old_name}'.")
-            logging.error(
-                f"Could not find data-itemid for grade item '{old_name}'.")
+            print(
+                f"Could not find data-itemid for grade item '{old_name}'. Skipping...")
+            logging.warning(
+                f"Could not find data-itemid for grade item '{old_name}'. Skipping...")
             return False
 
         print(
@@ -170,74 +181,73 @@ def modify_grade_item_name(driver, old_name, new_name, category):
         logging.info(
             f"Found data-itemid '{data_itemid}' for grade item '{old_name}'.")
 
-        # Retrieve sesskey and MoodleSession cookie
-        sesskey = retrieve_sesskey(driver)
-        moodle_session = retrieve_moodle_session_cookie(driver)
-
-        if not sesskey or not moodle_session:
-            print("Failed to retrieve sesskey or MoodleSession cookie.")
-            logging.error(
-                "Failed to retrieve sesskey or MoodleSession cookie.")
-            return False
-
         # Retrieve the course ID from the current URL
         course_id = driver.current_url.split("id=")[-1].split("&")[0]
+        print(f"Retrieved course_id: {course_id}")
+        logging.info(f"Retrieved course_id: {course_id}")
 
-        # Define the API endpoint URL and headers
-        url = f"https://moodle.nu.edu.eg/lib/ajax/service.php?sesskey={
-            sesskey}&info=core_form_dynamic_form"
-        headers = {
-            # Change to x-www-form-urlencoded
-            "Content-Type": "application/x-www-form-urlencoded",
-            "Cookie": f"MoodleSession={moodle_session}",
-            "Accept": "application/json, text/javascript, */*; q=0.01",
-            "X-Requested-With": "XMLHttpRequest"
-        }
+        # Inject a new button into the DOM with the correct data attributes
+        inject_button_script = f"""
+        var newButton = document.createElement('a');
+        newButton.className = 'dropdown-item';
+        newButton.setAttribute('role', 'menuitem');
+        newButton.setAttribute('data-gprplugin', 'tree');
+        newButton.setAttribute('data-courseid', '{course_id}');
+        newButton.setAttribute('data-itemid', '{data_itemid}');
+        newButton.setAttribute('data-trigger', 'add-item-form');
+        newButton.style.display = 'block';
+        newButton.style.position = 'relative';
+        newButton.style.zIndex = '9999';
+        newButton.textContent = 'Edit grade item';
+        document.body.insertBefore(newButton, document.body.firstChild);
+        """
+        driver.execute_script(inject_button_script)
+        print(
+            f"Injected a new button for grade item '{old_name}' at the top of the page.")
+        logging.info(
+            f"Injected a new button for grade item '{old_name}' at the top of the page.")
 
-        # URL-encode formdata and prepare payload
-        formdata = urllib.parse.quote(
-            f"id={data_itemid}&courseid={course_id}&itemid={data_itemid}&itemtype=manual&gpr_type=edit&gpr_plugin=tree&gpr_courseid={course_id}&sesskey={
-                sesskey}&_qf__core_grades_form_add_item=1&itemname={new_name}&rescalegrades=&grademin=0.00&hidden=0&locked=0&aggregationcoef=0.0000"
+        # Wait for the injected button to be interactable
+        time.sleep(2)  # Allow time for rendering
+        for attempt in range(3):
+            try:
+                injected_button = WebDriverWait(driver, 10).until(
+                    EC.element_to_be_clickable(
+                        (By.XPATH, "//a[text()='Edit grade item']"))
+                )
+                driver.execute_script(
+                    "arguments[0].scrollIntoView(true);", injected_button)
+                injected_button.click()
+                print(
+                    f"Clicked the injected button for grade item '{old_name}'.")
+                logging.info(
+                    f"Clicked the injected button for grade item '{old_name}'.")
+                break
+            except Exception as e:
+                logging.warning(
+                    f"Retry {attempt + 1}: Failed to click button. Error: {e}")
+                time.sleep(2)
+
+        # Wait for the edit modal to load
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located(
+                (By.XPATH, "//input[@name='itemname']"))
         )
-        payload = [
-            {
-                "index": 0,
-                "methodname": "core_form_dynamic_form",
-                "args": {
-                    "formdata": formdata,
-                    "form": "core_grades\\form\\add_item"
-                }
-            }
-        ]
 
-        # Convert cookies to requests-compatible format
-        cookies = {cookie['name']: cookie['value']
-                   for cookie in driver.get_cookies()}
+        # Locate the item name input and update its value
+        item_name_input = driver.find_element(
+            By.XPATH, "//input[@name='itemname']")
+        print(f"Changing item name from '{old_name}' to '{new_name}'...")
+        item_name_input.clear()
+        item_name_input.send_keys(new_name)
 
-        # Make the API call to modify the grade item name
-        response = requests.post(url, headers=headers,
-                                 data=json.dumps(payload), cookies=cookies)
-        logging.info(response.text)
-        # Check response status
-        if response.status_code == 200:
-            response_data = response.json()
-            if response_data and isinstance(response_data, list) and "error" not in response_data[0]:
-                print(f"Successfully changed '{old_name}' to '{new_name}'.")
-                logging.info(f"Successfully changed '{
-                             old_name}' to '{new_name}' via API.")
-                return True
-            else:
-                print(f"Failed to modify '{old_name}' to '{
-                      new_name}'. Response data: {response_data}")
-                logging.error(f"Failed to modify '{old_name}' to '{
-                              new_name}'. Response data: {response_data}")
-                return False
-        else:
-            print(f"Failed to change '{old_name}' to '{
-                  new_name}'. Status code: {response.status_code}")
-            logging.error(f"Failed to change '{old_name}' to '{
-                          new_name}'. Status code: {response.status_code}")
-            return False
+        # Locate and click the save button
+        save_button = driver.find_element(
+            By.XPATH, "//button[@data-action='save']")
+        save_button.click()
+        print(f"Successfully changed '{old_name}' to '{new_name}'.")
+        logging.info(f"Successfully changed '{old_name}' to '{new_name}'.")
+        return True
 
     except Exception as e:
         print(f"Failed to modify '{old_name}' to '{new_name}': {e}")
@@ -258,30 +268,30 @@ def modify_gradebook(driver, config):
         # Modify Tutorials category grade items
         if "Tutorials" in config:
             for old_name, new_name in config["Tutorials"].items():
-                logging.info(f"Attempting to change {old_name} to {
-                             new_name} in category Tutorials")
+                logging.info(
+                    f"Attempting to change {old_name} to {new_name} in category Tutorials")
                 success = modify_grade_item_name(
                     driver, old_name, new_name, "Tutorials")
                 if success:
-                    logging.info(f"Successfully changed {old_name} to {
-                                 new_name} in Tutorials category.")
+                    logging.info(
+                        f"Successfully changed {old_name} to {new_name} in Tutorials category.")
                 else:
-                    logging.error(f"Failed to change {old_name} to {
-                                  new_name} in Tutorials category.")
+                    logging.error(
+                        f"Failed to change {old_name} to {new_name} in Tutorials category.")
 
         # Modify Labs category grade items
         if "Labs" in config:
             for old_name, new_name in config["Labs"].items():
-                logging.info(f"Attempting to change {old_name} to {
-                             new_name} in category Labs")
+                logging.info(
+                    f"Attempting to change {old_name} to {new_name} in category Labs")
                 success = modify_grade_item_name(
                     driver, old_name, new_name, "Labs")
                 if success:
-                    logging.info(f"Successfully changed {old_name} to {
-                                 new_name} in Labs category.")
+                    logging.info(
+                        f"Successfully changed {old_name} to {new_name} in Labs category.")
                 else:
-                    logging.error(f"Failed to change {old_name} to {
-                                  new_name} in Labs category.")
+                    logging.error(
+                        f"Failed to change {old_name} to {new_name} in Labs category.")
 
 
 def main():
@@ -303,17 +313,6 @@ def main():
         logging.error("Exiting script due to login failure.")
         driver.quit()
         return
-
-    # # Retrieve the sesskey after logging in
-    # try:
-    #     # Get the sesskey from a hidden input field or a script tag
-    #     sesskey = driver.execute_script("return M.cfg.sesskey;")
-    #     print(f"Retrieved sesskey: {sesskey}")
-    #     logging.info(f"Retrieved sesskey: {sesskey}")
-    # except Exception as e:
-    #     print(f"Failed to retrieve sesskey: {e}")
-    #     logging.error(f"Failed to retrieve sesskey: {e}")
-    #     sesskey = None
 
     # Process each course URL
     modify_gradebook(driver, config)
