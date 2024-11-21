@@ -149,14 +149,14 @@ def retrieve_moodle_session_cookie(driver):
 
 def modify_grade_item_name(driver, old_name, new_name, category):
     """
-    Modifies the grade item name by injecting a button and interacting with it.
+    Modifies the grade item name by injecting a button in place of the 3-dotted button and interacting with it.
     Skips the item if it cannot be found.
     """
     try:
-        print(
-            f"Looking for grade item '{old_name}' in category '{category}'...")
-        logging.info(
-            f"Looking for grade item '{old_name}' in category '{category}'.")
+        print(f"Looking for grade item '{
+              old_name}' in category '{category}'...")
+        logging.info(f"Looking for grade item '{
+                     old_name}' in category '{category}'.")
 
         # Locate the grade item row based on the old name and get the data-itemid attribute
         try:
@@ -165,8 +165,8 @@ def modify_grade_item_name(driver, old_name, new_name, category):
             data_itemid = item_row.get_attribute("data-itemid")
         except Exception:
             print(f"Grade item '{old_name}' not found. Skipping...")
-            logging.warning(
-                f"Grade item '{old_name}' not found in category '{category}'. Skipping...")
+            logging.warning(f"Grade item '{old_name}' not found in category '{
+                            category}'. Skipping...")
             return False
 
         if not data_itemid:
@@ -186,68 +186,86 @@ def modify_grade_item_name(driver, old_name, new_name, category):
         print(f"Retrieved course_id: {course_id}")
         logging.info(f"Retrieved course_id: {course_id}")
 
-        # Inject a new button into the DOM with the correct data attributes
+        # Inject a new button in place of the 3-dotted button
         inject_button_script = f"""
-        var newButton = document.createElement('a');
-        newButton.className = 'dropdown-item';
-        newButton.setAttribute('role', 'menuitem');
-        newButton.setAttribute('data-gprplugin', 'tree');
-        newButton.setAttribute('data-courseid', '{course_id}');
-        newButton.setAttribute('data-itemid', '{data_itemid}');
-        newButton.setAttribute('data-trigger', 'add-item-form');
-        newButton.style.display = 'block';
-        newButton.style.position = 'relative';
-        newButton.style.zIndex = '9999';
-        newButton.textContent = 'Edit grade item';
-        document.body.insertBefore(newButton, document.body.firstChild);
+        var row = document.querySelector("tr[data-itemid='{data_itemid}']");
+        if (row) {{
+            var actionButton = row.querySelector("td.cell.column-actions .dropdown");
+            if (actionButton) {{
+                actionButton.innerHTML = `
+                    <a id="injected-edit-{data_itemid}" class="dropdown-item" aria-label="Edit grade item" role="menuitem"
+                       data-gprplugin="tree" data-courseid="{course_id}" data-itemid="{data_itemid}"
+                       data-trigger="add-item-form" href="#" style="z-index: 9999;">Edit grade item</a>
+                `;
+            }}
+        }}
         """
         driver.execute_script(inject_button_script)
-        print(
-            f"Injected a new button for grade item '{old_name}' at the top of the page.")
-        logging.info(
-            f"Injected a new button for grade item '{old_name}' at the top of the page.")
+        print(f"Injected a new button for grade item '{
+              old_name}' in place of the 3-dotted button.")
+        logging.info(f"Injected a new button for grade item '{
+                     old_name}' in place of the 3-dotted button.")
 
-        # Wait for the injected button to be interactable
-        time.sleep(2)  # Allow time for rendering
-        for attempt in range(3):
-            try:
-                injected_button = WebDriverWait(driver, 10).until(
-                    EC.element_to_be_clickable(
-                        (By.XPATH, "//a[text()='Edit grade item']"))
-                )
-                driver.execute_script(
-                    "arguments[0].scrollIntoView(true);", injected_button)
-                injected_button.click()
-                print(
-                    f"Clicked the injected button for grade item '{old_name}'.")
-                logging.info(
-                    f"Clicked the injected button for grade item '{old_name}'.")
-                break
-            except Exception as e:
-                logging.warning(
-                    f"Retry {attempt + 1}: Failed to click button. Error: {e}")
-                time.sleep(2)
+        # Wait for and click the injected button
+        try:
+            injected_button = driver.find_element(
+                By.ID, f"injected-edit-{data_itemid}")
+            driver.execute_script(
+                "arguments[0].scrollIntoView(true);", injected_button)
+            driver.execute_script("arguments[0].click();", injected_button)
+            print(f"Clicked the injected button for grade item '{old_name}'.")
+            logging.info(
+                f"Clicked the injected button for grade item '{old_name}'.")
+        except Exception as e:
+            print(f"Failed to locate or click the injected button for grade item '{
+                  old_name}': {e}")
+            logging.error(f"Failed to locate or click the injected button for grade item '{
+                          old_name}': {e}")
+            return False
 
         # Wait for the edit modal to load
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located(
-                (By.XPATH, "//input[@name='itemname']"))
-        )
+        try:
+            WebDriverWait(driver, 3).until(
+                EC.presence_of_element_located(
+                    (By.XPATH, "//input[@name='itemname']"))
+            )
+            print("Edit form appeared successfully.")
+            logging.info("Edit form appeared successfully.")
+        except Exception as e:
+            print(f"Failed to wait for the edit form: {e}")
+            logging.error(f"Failed to wait for the edit form: {e}")
+            return False
 
         # Locate the item name input and update its value
-        item_name_input = driver.find_element(
-            By.XPATH, "//input[@name='itemname']")
-        print(f"Changing item name from '{old_name}' to '{new_name}'...")
-        item_name_input.clear()
-        item_name_input.send_keys(new_name)
+        try:
+            item_name_input = driver.find_element(
+                By.XPATH, "//input[@name='itemname']")
+            item_name_input.clear()
+            item_name_input.send_keys(new_name)
+            print(f"Changing item name from '{old_name}' to '{new_name}'...")
+            logging.info(f"Changing item name from '{
+                         old_name}' to '{new_name}'...")
+        except Exception as e:
+            print(
+                f"Failed to locate or interact with the item name input: {e}")
+            logging.error(
+                f"Failed to locate or interact with the item name input: {e}")
+            return False
 
-        # Locate and click the save button
-        save_button = driver.find_element(
-            By.XPATH, "//button[@data-action='save']")
-        save_button.click()
-        print(f"Successfully changed '{old_name}' to '{new_name}'.")
-        logging.info(f"Successfully changed '{old_name}' to '{new_name}'.")
-        return True
+        # Save the changes
+        try:
+            save_button = driver.find_element(
+                By.XPATH, "//button[@data-action='save']")
+            driver.execute_script("arguments[0].click();", save_button)
+            print(f"Successfully changed '{old_name}' to '{
+                  new_name}'. Waiting for 5 seconds before proceeding...")
+            logging.info(f"Successfully changed '{old_name}' to '{new_name}'.")
+            time.sleep(5)  # Add a delay after saving
+            return True
+        except Exception as e:
+            print(f"Failed to locate or click the save button: {e}")
+            logging.error(f"Failed to locate or click the save button: {e}")
+            return False
 
     except Exception as e:
         print(f"Failed to modify '{old_name}' to '{new_name}': {e}")

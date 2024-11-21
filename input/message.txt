@@ -2,23 +2,12 @@ Dear Students,
 
 I hope this message finds you well.
 
-Please be informed that the midterm exam will take place on Saturday, November 16th, from 8:30 AM to 9:29 AM. Each student is assigned a specific room for the exam; please refer to the attached PDF for your room assignment.
+Please note that there will be no labs or tutorials during the week starting Saturday, November 23rd (Next Week).
 
-Exam Guidelines :
-1.Calculators Are not Allowed.
-2.You must come to your exam on time. You will not be allowed to enter your exam after 15 minutes from the beginning of the exams.
-if you came late the time will not be compensated. 
-3.You cannot leave the exam before mid-time.
-4.No bathroom breaks are allowed except for emergencies.
-5.You must bring your NU ID, or you will not enter the exam.
-6.You must sign the attendance sheet given to you by the proctor or your attendance will not be considered.
-7.Mobile Phones are not allowed inside the hall.
-8.For online exams, you must open the exams from labs PCs.
-9.For online exams, you are not allowed to open any other website other than Moodle. If you did so, it will be considered a cheating case with its consequent consequences.
+Regular sessions will resume the following week as per the usual schedule.
 
-
-Best of luck with your preparation, and we look forward to a smooth exam day.
+If you have any questions or concerns, please feel free to reach out to your course TAs.
 
 Best regards,
-CSCI101 Team
+Yusuf Fathi
 TA/RA at ITCS
