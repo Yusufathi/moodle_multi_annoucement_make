@@ -1,13 +1,8 @@
 Dear Students,
 
-I hope this message finds you well.
+Kindly note that all Lectures, Labs, and Tutorials are cancelled for the upcoming week only (from 24th of November to the 28th of November).
 
-Please note that there will be no labs or tutorials during the week starting Saturday, November 23rd (Next Week).
-
-Regular sessions will resume the following week as per the usual schedule.
-
-If you have any questions or concerns, please feel free to reach out to your course TAs.
+All course activities (Lecture, Labs, and Tutorials) will proceed normally starting the 1st of December.
 
 Best regards,
-Yusuf Fathi
-TA/RA at ITCS
+CSCI101/CBIO101/CSC111 Team

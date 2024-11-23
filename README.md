@@ -8,15 +8,18 @@ This repository contains scripts that automate various tasks on the Moodle platf
 1. **Section Uploader** - Automates the process of creating sections and uploading content to Moodle courses.
 2. **Announcement Poster** - Automates the process of posting announcements to Moodle forums.
 3. **Gradebook Setup** - Automates the process of setting up a gradebook, including adding categories and grade items.
+4. Chromedriver link : <https://googlechromelabs.github.io/chrome-for-testing/>
 
 ---
 
 ## Script 1: Section Uploader (`section_uploader.py`)
 
 ### Description
+
 This script automates the creation of sections and the uploading of content to Moodle courses. It reads the course links, section names, and content from a predefined folder structure, and creates sections in the course with the corresponding content.
 
-### Folder Structure:
+### Folder Structure
+
 ```
 section/
     links.txt         # Contains Moodle course links
@@ -26,6 +29,7 @@ section/
 ```
 
 ### Usage
+
 1. Ensure that the required files and folder structure are in place.
 2. Run the script, log in manually when prompted, and let the script automate the rest.
 
@@ -34,9 +38,11 @@ section/
 ## Script 2: Announcement Poster (`announcer.py`)
 
 ### Description
+
 This script automates the process of posting announcements to Moodle forums. It reads the forum links, subject, message, and attachments from predefined files, and posts the announcement to each forum.
 
-### Folder Structure:
+### Folder Structure
+
 ```
 input/
     links.txt      # Contains Moodle forum links
@@ -46,6 +52,7 @@ input/
 ```
 
 ### Usage
+
 1. Ensure that the required files and folder structure are in place.
 2. Run the script, log in manually when prompted, and let the script automate the announcement posting process.
 
@@ -54,9 +61,11 @@ input/
 ## Script 3: Gradebook Setup (`grade_book_setup.py`)
 
 ### Description
+
 This script automates the process of setting up the gradebook for Moodle courses. It creates categories and grade items based on the structure provided in a JSON file.
 
-### Folder Structure:
+### Folder Structure
+
 ```
 grade_book/
     links.txt      # Contains Moodle course links
@@ -64,6 +73,7 @@ grade_book/
 ```
 
 ### JSON Structure Example
+
 ```json
 {
     "Lectures": 5,
@@ -87,6 +97,7 @@ grade_book/
 ```
 
 ### Usage
+
 1. Ensure that the required files and folder structure are in place.
 2. Run the script, log in manually when prompted, and let the script automate the gradebook setup process.
 
@@ -111,11 +122,14 @@ Each script generates logs that are stored in the `logs/` directory. These logs 
 
 1. Clone the repository.
 2. Install the required Python packages:
+
    ```
    pip install -r requirements.txt
    ```
+
 3. Download and place the appropriate version of Chromedriver in the root directory.
 4. Run the desired script by executing:
+
    ```
    python <script_name.py>
    ```
@@ -123,4 +137,5 @@ Each script generates logs that are stored in the `logs/` directory. These logs 
 ---
 
 ## License
+
 This project is licensed under the MIT License.
